@@ -1,3 +1,24 @@
 #root {
   padding: 2rem;
 }
+
+.testimonials-container {
+  /* Styles for the testimonials container */
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column size and gaps */
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  /* Mobile styles */
+  .testimonial-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+}
+
+/* Other styles for testimonial card, profile pic, text, and button */
