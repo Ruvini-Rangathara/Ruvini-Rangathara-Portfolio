@@ -33,7 +33,7 @@ const TestimonialCard = ({ testimonial, onClick }) => (
 const Modal = ({isOpen, onClose, testimonial}) => {
     if (!isOpen) return null;
     return (
-        <div className="text-xl fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center">
+        <div className="text-xl fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center xs:p-6">
             <div className="bg-white p-6 rounded-md shadow-md max-w-lg w-full">
                 <button onClick={onClose} className="bg-white text-[#BEB2BB] px-2 py-1 rounded-md float-right shadow-md hover:bg-[#BEB2BB] hover:text-white transition-colors border border-[#BEB2BB]">Close
                 </button>
@@ -59,7 +59,7 @@ const Testimonial = () => {
     const visibleTestimonials = showMore ? testimonials : testimonials.slice(0, 4);
 
     return (
-        <div className="p-10">
+        <div className="xl:p-20 xs:p-2">
             <div className="flex flex-wrap -mx-2">
                 {visibleTestimonials.map(testimonial => (
                     <div key={testimonial.id} className="w-full md:w-1/2 px-2 mb-4">
@@ -67,10 +67,10 @@ const Testimonial = () => {
                     </div>
                 ))}
             </div>
-            <div className="text-center mt-4">
+            <div className="text-center mt-2">
                 <button
                     onClick={() => setShowMore(!showMore)}
-                    className="bg-white text-xl text-indigo-600 px-2 py-1 rounded-md shadow-md hover:bg-indigo-600 hover:text-white transition-colors border border-indigo-600"
+                    className="bg-white text-xl text-indigo-600 px-2 py-1 rounded-md shadow-md hover:bg-indigo-600 hover:text-white transition-colors border border-indigo-600 mb-6"
                 >
                     {showMore ? 'See Less' : 'See More'}
                 </button>

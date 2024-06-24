@@ -6,6 +6,7 @@ import Work from "./page/work.tsx";
 import Testimonial from "./page/testimonial.tsx";
 import Contact from "./page/contact.tsx";
 import Footer from "./component/footer.tsx";
+import Experience from "./page/Experience.tsx";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <>
             <Header/>
             <Home/>
+            <Experience/>
             <Skill/>
             <Work/>
             <Testimonial/>

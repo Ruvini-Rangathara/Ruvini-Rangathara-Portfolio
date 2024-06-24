@@ -28,6 +28,7 @@ module.exports = {
         accent: '#00001A',
       },
       backgroundImage: {
+        circleStar: 'url("/circle-star.svg")',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -35,6 +36,9 @@ module.exports = {
       fontSize: {
         'xs': ['12px', '16px'],
         'xl': ['13px', '18px'],
+      },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
       },
     },
   },
