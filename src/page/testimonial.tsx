@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {FaQuoteLeft} from "react-icons/fa";
 
 const testimonials = [
     { id: 1, name: "Anne Smith", role: "Customer", content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!" },
@@ -14,30 +15,37 @@ const testimonials = [
 ];
 
 const TestimonialCard = ({ testimonial, onClick }) => (
-    <div onClick={() => onClick(testimonial)} className="bg-white shadow-md p-4 rounded-md cursor-pointer text-[13px]">
+    <div onClick={() => onClick(testimonial)} className="bg-white shadow-md p-4 rounded-md cursor-pointer text-xl">
         <div className="flex items-center mb-4">
-            <img src="user-profile.jpg" alt={testimonial.name} className="w-12 h-12 rounded-full mr-4" />
+            <img src="user-profile.jpg" alt={testimonial.name} className="w-12 h-12 rounded-full mr-4"/>
             <div>
                 <h3 className="text-md font-semibold">{testimonial.name}</h3>
-                <p className="text-[12px] text-gray-500">{testimonial.role}</p>
+                <p className="text-xs text-gray-500">{testimonial.role}</p>
             </div>
+        </div>
+        <div className={'mb-2'}>
+            <FaQuoteLeft className={'text-lg text-accent/20 mx-auto md:mx-0'}/>
         </div>
         <p className="line-clamp-2">{testimonial.content}</p>
     </div>
 );
 
-const Modal = ({ isOpen, onClose, testimonial }) => {
+const Modal = ({isOpen, onClose, testimonial}) => {
     if (!isOpen) return null;
     return (
-        <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center">
+        <div className="text-xl fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center">
             <div className="bg-white p-6 rounded-md shadow-md max-w-lg w-full">
-                <button onClick={onClose} className="bg-red-500 text-white px-4 py-2 rounded-md float-right">Close</button>
+                <button onClick={onClose} className="bg-white text-[#BEB2BB] px-2 py-1 rounded-md float-right shadow-md hover:bg-[#BEB2BB] hover:text-white transition-colors border border-[#BEB2BB]">Close
+                </button>
                 <div className="flex items-center mb-4">
-                    <img src="user-profile.jpg" alt={testimonial.name} className="w-12 h-12 rounded-full mr-4" />
+                    <img src="user-profile.jpg" alt={testimonial.name} className="w-12 h-12 rounded-full mr-4"/>
                     <div>
                         <h3 className="text-md font-semibold">{testimonial.name}</h3>
-                        <p className="text-[12px] text-gray-500">{testimonial.role}</p>
+                        <p className="text-xs text-gray-500">{testimonial.role}</p>
                     </div>
+                </div>
+                <div className={'mb-4'}>
+                    <FaQuoteLeft className={'text-lg text-accent/20 mx-auto md:mx-0'}/>
                 </div>
                 <p>{testimonial.content}</p>
             </div>
@@ -51,7 +59,7 @@ const Testimonial = () => {
     const visibleTestimonials = showMore ? testimonials : testimonials.slice(0, 4);
 
     return (
-        <div className="p-6">
+        <div className="p-10">
             <div className="flex flex-wrap -mx-2">
                 {visibleTestimonials.map(testimonial => (
                     <div key={testimonial.id} className="w-full md:w-1/2 px-2 mb-4">
@@ -62,7 +70,7 @@ const Testimonial = () => {
             <div className="text-center mt-4">
                 <button
                     onClick={() => setShowMore(!showMore)}
-                    className="bg-blue-500 text-white px-4 py-2 rounded-md"
+                    className="bg-white text-xl text-indigo-600 px-2 py-1 rounded-md shadow-md hover:bg-indigo-600 hover:text-white transition-colors border border-indigo-600"
                 >
                     {showMore ? 'See Less' : 'See More'}
                 </button>

@@ -2,6 +2,11 @@
   padding: 2rem;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
 .testimonials-container {
   /* Styles for the testimonials container */
   max-width: 800px; /* Adjust as needed */

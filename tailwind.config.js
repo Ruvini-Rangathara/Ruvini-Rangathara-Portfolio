@@ -32,6 +32,10 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      fontSize: {
+        'xs': ['12px', '16px'],
+        'xl': ['13px', '18px'],
+      },
     },
   },
   container: {
