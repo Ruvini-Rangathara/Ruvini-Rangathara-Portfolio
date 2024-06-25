@@ -24,18 +24,19 @@ module.exports = {
     extend: {
       colors: {
         primary: '#ffffff',
-        secondary: '#CBB89D',
+        secondary: '#718096',
         accent: '#00001A',
       },
       backgroundImage: {
         circleStar: 'url("/circle-star.svg")',
+        site: 'url("/Reports.jpeg")',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
       fontSize: {
-        'xs': ['12px', '16px'],
-        'xl': ['13px', '18px'],
+        'xs': ['14px', '18px'],
+        'xl': ['15px', '20px'],
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',

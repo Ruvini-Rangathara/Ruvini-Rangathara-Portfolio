@@ -3,16 +3,16 @@ import React from 'react';
 const Contact = () => {
     return (
         // <div className="flex mx-auto justify-center h-[90vh] items-center bg-gradient-to-br from-purple-500 to-indigo-500 p-4">
-            <div className="container mx-auto border border-green h-[80vh] max-w-4xl bg-primary rounded-lg shadow-lg p-6 lg:p-10 flex flex-col md:flex-row md:space-x-8 xs:h-full xs:text-sm">
+            <div className="xl:mb-10 mt-10 xs:px-10 container mx-auto border border-green h-[80vh] max-w-4xl bg-primary rounded-lg shadow-lg p-6 lg:p-10 flex flex-col md:flex-row md:space-x-8 xs:h-full xs:text-sm">
                 <div className="md:w-1/2">
                     <h2 className="text-3xl font-bold text-indigo-700 font-poppins">Let's talk</h2>
                     <p className="text-gray-600 mt-2 font-poppins">
                         To request a quote or want to meet up for coffee,
                         contact us directly or fill out the form and we will get back to you promptly.
                     </p>
-                    <form className="mt-4 text-[15px]">
+                    <form className="mt-4 text-xl xs:text-xs">
                         <div className="mb-2">
-                            <label className="block text-gray-600 font-poppins" htmlFor="name">Your Name</label>
+                            <label className="block text-secondary font-poppins" htmlFor="name">Your Name</label>
                             <input
                                 type="text"
                                 id="name"

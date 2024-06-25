@@ -1,5 +1,6 @@
-#root {
-  padding: 2rem;
+#root{
+  font-family: poppins, serif;
+  line-height: 20px;
 }
 
 ::-webkit-scrollbar {

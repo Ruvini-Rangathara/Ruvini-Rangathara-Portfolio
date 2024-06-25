@@ -1,18 +1,17 @@
 import React from 'react';
-import ProjectsBtn from "../component/ProjectsBtn.tsx";
 
 const Home = () => {
     return (
-        <div className="bg-white h-full flex items-center justify-center flex-row py-10 ">
-            <div>
+        <div className="px-10 xs:-px-10 bg-white h-full flex items-center justify-center xl:flex-row xs:flex-col py-10 ">
+            <div className={''}>
                 <h1
-                    className={'text-indigo-600 text-4xl font-bold xs:text-2xl sm:text-4xl xl:text-5xl mb-4 xl:leading-[50px]'}
+                    className={'text-indigo-600 text-4xl font-bold xs:text-[29px] sm:text-4xl xl:text-5xl mb-4 xl:leading-[50px]'}
                 >Transforming Ideas <br/> Into {' '}
                     <span className={'text-[#9F9F9F]'}>Digital Reality</span>
                 </h1>
                 {/*Subtitle*/}
                 <p
-                    className={'xs:text-xs text-xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-6 xl:mb-6 '}
+                    className={'xs:text-xs pr-6 text-xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-6 xs:leading-[20px] xs:text-justify'}
                 >
                     Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit.
@@ -21,16 +20,26 @@ const Home = () => {
                     reiciendis saepe sequi similique soluta ullam,
                     vero voluptates!
                 </p>
-                {/*    btn*/}
-                <div className={'flex justify-start relative'}>
-                    <ProjectsBtn/>
-                </div>
+
+                <p
+                    className={'text-[12px] mx-auto xl:mx-0 mb-6 xs:leading-[20px]'}
+                >
+                    Trainee Associate Software Engineer
+                    <br/>
+                    <span>
+                        @ Kingteza Software Solutions ( 2024 Apr - Present )
+                    </span>
+                </p>
+
+
+                {/*    position*/}
+
             </div>
-            <div className={'xl:flex hidden'}>
+            <div className={'flex xl:ml-6 mt-20'}>
                 <img
-                    src="portfolio.png"
+                    src="Profile-Picture4.png"
                     alt="Logo"
-                    className={'w-[25vw] h-[55vh]'}/>
+                    className={'w-[250px] mx-auto'}/>
             </div>
 
         </div>
