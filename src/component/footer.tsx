@@ -1,41 +1,45 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import {IoLogoLinkedin} from "react-icons/io5";
+import {FaGithubSquare} from "react-icons/fa";
+import {ImMail} from "react-icons/im";
 
 
 const Footer = () => {
-    return (
-        <footer className="bg-primary text-secondary mt-10 xs:mt-0 mb-6">
-            <hr className="bg-accent/10 mb-6" />
+    return (<footer className="bg-primary text-secondary mt-10 xs:mt-0 mb-6">
+            <hr className="bg-accent/10 mb-6"/>
             <div className="container mx-auto text-center">
                 <h2 className="text-lg font-semibold mb-4">Ruvini Rangathara</h2>
                 <nav className="mb-4">
                     <ul className="flex justify-center flex-wrap space-x-4 text-xl xs:text-xs">
-                        <li ><a href="#" className="hover:text-green-400">Home</a></li>
-                        <li ><a href="#" className="hover:text-green-400">About</a></li>
-                        <li ><a href="#" className="hover:text-green-400">Skill</a></li>
-                        <li ><a href="#" className="hover:text-green-400">Work</a></li>
-                        <li ><a href="#" className="hover:text-green-400">Testimonial</a></li>
-                        <li ><a href="#" className="hover:text-green-400">Contact</a></li>
+                        <li><a href="#" className="hover:text-accent">Home</a></li>
+                        <li><a href="#" className="hover:text-accent">About</a></li>
+                        <li><a href="#" className="hover:text-accent">Skill</a></li>
+                        <li><a href="#" className="hover:text-accent">Work</a></li>
+                        <li><a href="#" className="hover:text-accent">Testimonial</a></li>
+                        <li><a href="#" className="hover:text-accent">Contact</a></li>
                     </ul>
                 </nav>
                 <div className="flex justify-center space-x-4 mb-4">
 
-                    <a href="mailto:youremail@gmail.com" className="text-[15px] text-red-500 hover:text-red-700"><i
-                        className="far fa-envelope"></i></a>
-                    <a href="tel:+1234567890" className="text-[14px] text-blue-500 hover:text-green-700"><i
-                        className="fas fa-phone"></i></a>
-                    <a href="https://wa.me/whatsappphonenumber" className="text-[15px] text-green-500 hover:text-green-700"><i
-                        className="fab fa-whatsapp"></i></a>
-                    <a href="skype:your_skype_username?call" className="text-[15px] text-blue-500 hover:text-blue-700"><i
-                        className="fab fa-skype"></i></a>
+                    <a href="mailto:youremail@gmail.com" className="text-xl text-secondary ">
+                        <ImMail/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ruvini-rangathara-747756229/"
+                       className="text-xl text-secondary ">
+                        <IoLogoLinkedin/>
+                    </a>
+                    <a href="https://github.com/Ruvini-Rangathara" className="text-xl text-secondary ">
+                        <FaGithubSquare/>
+                    </a>
 
                 </div>
                 <p className="text-[12px]">
-                    Copyright ©2024 All rights reserved | Developed by <span className="text-indigo-600">Ruvini Rangathara</span>
+                    Copyright ©2024 All rights reserved | Developed by <span
+                    className="text-accent">Ruvini Rangathara</span>
                 </p>
             </div>
-        </footer>
-    );
+        </footer>);
 }
 
 export default Footer;

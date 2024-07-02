@@ -24,11 +24,13 @@ module.exports = {
     extend: {
       colors: {
         primary: '#ffffff',
-        secondary: '#718096',
-        accent: '#00001A',
+        // secondary: '#111312',
+        secondary: '#484544',
+        // accent: '#00001A',
+        accent: 'rgb(67 56 202)',
+        indigo:'rgb(67 56 202)'
       },
       backgroundImage: {
-        circleStar: 'url("/circle-star.svg")',
         site: 'url("/Reports.jpeg")',
       },
       fontFamily: {
@@ -36,7 +38,7 @@ module.exports = {
       },
       fontSize: {
         'xs': ['14px', '18px'],
-        'xl': ['15px', '20px'],
+        'xl': ['17px', '20px'],
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',

@@ -15,7 +15,8 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
@@ -30,6 +31,7 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "postcss": "^8.4.38",
     "react-icons": "^5.2.1",
+    "react-typed": "^2.0.12",
     "swiper": "^11.1.4",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.2.2",
