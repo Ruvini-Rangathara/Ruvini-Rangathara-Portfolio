@@ -1,13 +1,11 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import {IoLogoLinkedin} from "react-icons/io5";
-import {FaGithubSquare} from "react-icons/fa";
-import {ImMail} from "react-icons/im";
 
 
 const Footer = () => {
-    return (<footer className="bg-primary text-secondary mt-10 xs:mt-0 mb-6">
-            <hr className="bg-accent/10 mb-10"/>
+    return (<
+        footer className="bg-primary text-secondary mt-6 xs:mt-0 mb-16">
+            <hr className="bg-accent/10 mb-6"/>
             <div className="container mx-auto text-center">
                 {/*<h2 className="text-lg font-semibold mb-4">Ruvini Rangathara</h2>*/}
                 {/*<nav className="mb-4">*/}

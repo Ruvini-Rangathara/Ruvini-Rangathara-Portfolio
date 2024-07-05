@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { Howl } from 'howler';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faVolumeMute, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 
 const roles = ["Web Developer", "Backend Developer", "Frontend Developer", "Full Stack Developer", "Software Engineer"];
 
@@ -28,12 +26,12 @@ const Home = () => {
     };
 
     return (
-        <div className="w-[90vw] mx-auto bg-white  rounded-lg overflow-hidden mt-14">
+        <div className="w-[90vw] xs:w-[88vw] mx-auto bg-white rounded-lg overflow-hidden xl:mt-14 xs:mt-6">
             <div
                 className="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 px-0 xs:px-4 xl:h-[80vh] xs:h-[370px] w-full text-center flex justify-center">
                 <div className="my-auto">
-                    <span className="text-accent text-xl">Hello, mate 👋</span>
-                    <h1 className="text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-4">
+                    <span className="text-accent text-xl mb-1">Hello, mate 👋</span>
+                    <h1 className="text-accent text-3xl xs:text-[24px] sm:text-4xl xl:text-[40px] mb-4">
                         I'm Ruvini Rangathara <br/> a {' '}
                         <span className="text-secondary animated-text">
                             <Typewriter
@@ -55,7 +53,7 @@ const Home = () => {
 
 
                     <div className="text-center">
-                        <p className="text-[12px] text-secondary text-center px-auto xs:px-4 ">
+                        <p className="text-[12px] text-secondary text-center px-auto xs:px-4 xs:mb-4 mb-2">
                             I'm a Software Engineer from Sri Lanka, specializing in Web Development, <br/> Full Stack
                             Development, and UX/UI designing.
                         </p>

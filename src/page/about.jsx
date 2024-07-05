@@ -2,17 +2,40 @@ import React from "react";
 
 export default function About() {
     return (<>
-            <div className="flex justify-start mt-16">
-                <img
-                    className="xl:w-40 xl:h-40 object-cover rounded-full border-1 border-white xl:ml-8 xs:ml-2 xs:w-32 xs:h-32"
-                    src="/assets/image/dp.png"
-                    alt="Ruvini Rangathara"
-                />
+        <h2 className={"hidden xl:block text-center text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-2 mt-16"}>
+            About Me
+        </h2>
+        <div className="flex justify-between xs:justify-center xs:items-center mt-16 xs:mt-4 mx-auto xl:px-48 xs:px-10 xl:flex-row xs:flex-col-reverse">
+            <div className={'px-16 xs:px-0'}>
+                <p className={' text-xs mt-4 leading-relaxed'}>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusantium aspernatur atque blanditiis deserunt ducimus eligendi
+                    eveniet exercitationem iste maxime molestias, nam, nostrum perspiciatis
+                    repudiandae similique sint, tenetur ut veniam voluptatum?
+                    eveniet exercitationem iste maxime molestias, nam, nostrum perspiciatis
+                    repudiandae similique sint,
+                </p>
+                <p className="text-[12px] text-gray-500 xl:mx-0 mb-4 mt-4">
+                    Trainee Associate Software Engineer
+                    <br/>
+                    <span className={''}>@ Kingteza Software Solutions<br/> ( 2024 Apr - Present )</span>
+                </p>
+                <div className="mt-4 flex justify-start space-x-4 ">
+                    <a href="#" className="text-pink-500 hover:text-pink-700"><i className="fa-regular fa-envelope"></i></a>
+                    <a href="#" className="text-blue-300 hover:text-blue-500"><i className="fab fa-twitter"></i></a>
+                    <a href="#" className="text-green-500 hover:text-green-700"><i className="fab fa-whatsapp"></i></a>
+                </div>
+
+                <button className={'px-4 py-2 mt-4 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 text-primary text-xs rounded-lg hover:scale-105 '}>
+                    Download CV
+                </button>
             </div>
-            <p className="text-[12px] text-gray-500 xl:mx-0 mb-4 mt-4">
-                Trainee Associate Software Engineer
-                <br/>
-                <span className={''}>@ Kingteza Software Solutions<br/> ( 2024 Apr - Present )</span>
-            </p>
-        </>)
+
+            <img
+                className="xl:w-[350px] xl:h-[350px] object-cover xl:ml-8 xs:ml-2 xs:w-[240px] xs:h-[240px]"
+                src="/assets/image/dp-test.png"
+                alt="Ruvini Rangathara"
+            />
+        </div>
+    </>)
 }

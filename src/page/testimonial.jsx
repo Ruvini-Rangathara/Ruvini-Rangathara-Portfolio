@@ -32,8 +32,9 @@ const testimonials = [{
     content: "Ruvini is one among the best students I've met. Her keen intellect and proactive approach to learning made her stand out showcasing her strong leadership qualities. This enhanced her own learning experience but also benefited her peers as a demonstrator. I am sure that her combination of technological prowess and academic excellence will position her as a standout individual with a promising future."
 }];
 
-const TestimonialCard = ({testimonial, onClick}) => (<div onClick={() => onClick(testimonial)}
-                                                          className="bg-white border shadow-md p-4 rounded-lg cursor-pointer text-xl">
+const TestimonialCard = ({testimonial, onClick}) => (
+    <div onClick={() => onClick(testimonial)}
+         className="bg-white border shadow-md p-4 rounded-lg cursor-pointer text-xl">
     <div className="flex items-center mb-4">
         <img src={testimonial.image} alt='/user-profile.jpg' className="w-12 h-12 rounded-full mr-4"/>
         <div>
@@ -72,7 +73,8 @@ const Modal = ({isOpen, onClose, testimonial}) => {
 const Testimonial = () => {
     const [selectedTestimonial, setSelectedTestimonial] = useState(null);
 
-    return (<div className="xl:px-44 mb-6 xs:px-10 mt-6">
+    return (
+        <div className="xl:px-44 mb-6 xs:mb-0 xs:px-10 mt-6">
         <h2 className={'mt-12 text-center text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-2'}>Testimonials</h2>
         <p className={'text-secondary/50 text-center mb-6 text-xl xs:text-xs xl:px-44 xs:px-1 '}>
             What People Are Saying

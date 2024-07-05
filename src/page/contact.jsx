@@ -2,10 +2,12 @@ import React from 'react';
 
 const Contact = () => {
     return (<div
-            className="xl:mb-14 mt-14 xs:px-10 container mx-auto h-[80vh] max-w-4xl bg-primary p-6 lg:p-10 flex flex-col md:flex-row md:space-x-8 xs:h-full xs:text-sm">
+            className="xl:mb-14 xs:mb-4 xl:mt-14 xs:mt-2 xs:px-10 container mx-auto h-[80vh] max-w-4xl bg-primary px-6 lg:px-10 flex flex-col md:flex-row md:space-x-8 xs:h-full xs:text-sm">
             <div className="md:w-1/2">
-                <h2 className="text-3xl font-bold text-accent font-poppins">Let's talk</h2>
-                <p className="text-gray-600 mt-2 font-poppins">
+                <h2 className={" text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-2 mt-16"}>
+                   Let's Talk
+                </h2>
+                <p className="text-gray-600 mt-2 ">
                     To request a quote or want to meet up for coffee,
                     contact us directly or fill out the form and we will get back to you promptly.
                 </p>
@@ -35,14 +37,14 @@ const Contact = () => {
                         ></textarea>
                     </div>
                     <button
-                        className="w-full p-2 mt-2 bg-accent text-primary rounded rounded-xl hover:bg-accent/70 transition duration-300 ">
+                        className="px-2 xs:mb-4 p-2 mt-2 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200  text-primary rounded rounded-xl hover:bg-accent/70 transition duration-300 ">
                         Send Message
                     </button>
                 </form>
             </div>
-            <div className="md:w-1/2 mt-8 md:mt-0 flex flex-col items-center justify-center">
-                <div className="flex justify-center xl:mt-8 md:mt-8">
-                    <img src="/assets/image/contact1.png" alt="Contact" className="w-64"/>
+            <div className="md:w-1/2 mt-8 md:mt-0 flex flex-col items-center justify-center hidden xl:block">
+                <div className="flex justify-center mt-8  md:pt-8">
+                    <img src="/assets/image/contact1.png" alt="Contact" className="w-64 mt-20"/>
                 </div>
                 <div className="mt-2 xl:mt-6 text-center  font-poppins">
                     <p>Ruvini Rangathara</p>
