@@ -31,7 +31,7 @@ module.exports = {
         indigo:'rgb(67 56 202)'
       },
       backgroundImage: {
-        site: 'url("/Reports.jpeg")',
+        site: 'url("/assets/image/Reports.jpeg")',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
