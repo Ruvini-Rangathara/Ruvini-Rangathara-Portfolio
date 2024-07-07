@@ -74,7 +74,7 @@ const Testimonial = () => {
     const [selectedTestimonial, setSelectedTestimonial] = useState(null);
 
     return (
-        <div className="xl:px-44 mb-6 xs:mb-0 xs:px-10 mt-6">
+        <div className="xl:px-44 mb-6 xs:mb-0 xs:px-10 mt-6 xs:mt-10">
         <h2 className={'mt-12 text-center text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-2'}>Testimonials</h2>
         <p className={'text-secondary/50 text-center mb-6 text-xl xs:text-xs xl:px-44 xs:px-1 '}>
             What People Are Saying

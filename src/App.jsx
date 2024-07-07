@@ -10,7 +10,8 @@ import React from 'react';
 import About from "./page/about.jsx";
 
 const App = () => {
-    return (<>
+    return (
+        <>
         <Navbar/>
         <Home/>
         <About/>
@@ -19,7 +20,8 @@ const App = () => {
         <Testimonial/>
         <Contact/>
         <Footer/>
-    </>);
+    </>
+    );
 };
 
 export default App;

@@ -37,7 +37,7 @@ const Contact = () => {
                         ></textarea>
                     </div>
                     <button
-                        className="px-2 xs:mb-4 p-2 mt-2 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200  text-primary rounded rounded-xl hover:bg-accent/70 transition duration-300 ">
+                        className="hover:scale-105 px-2 xs:mb-4 p-2 mt-2 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200  text-primary rounded rounded-xl hover:bg-accent/70 transition duration-300 ">
                         Send Message
                     </button>
                 </form>

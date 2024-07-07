@@ -100,7 +100,8 @@ const ProjectModal = ({isOpen, onClose, project}) => {
     };
 
     if (!isOpen || !project) return null;
-    return (<div onClick={handleOverlayClick}
+    return (
+        <div onClick={handleOverlayClick}
                  className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center xs:p-6 z-10">
         <div className="bg-white p-6 rounded-md shadow-md max-w-lg w-full">
             <div className={'mb-2'}>
@@ -166,7 +167,7 @@ const ProjectSection = () => {
 const Section = () => {
     return (<section
         className="mt-20 relative bg-site bg-cover bg-no-repeat text-white py-20 flex justify-center items-center mb-6 xl:h-[50vh] xs:h-[40vh] xs:px-6">
-        <div className="absolute inset-0 bg-accent bg-opacity-40"></div>
+        <div className="absolute inset-0 bg-accent bg-opacity-30"></div>
         <div className="relative text-center max-w-2xl leading-[20px]">
             <h1 className="xs:text-3xl text-4xl font-bold mb-4 ">Have any project on mind?</h1>
             <p className="mb-8 text-xl xs:text-xs">
@@ -181,7 +182,7 @@ const Section = () => {
                     Download CV
                 </button>
                 <button
-                    className="border-2 border-white px-6 py-1 text-xl xs:text-xs rounded-full hover:bg-accent hover:scale-105 transform transition-transform duration-200 ease-in-out">
+                    className="border-2 border-white px-6 py-1 text-xl xs:text-xs rounded-full hover:bg-purple-500 hover:scale-105 transform transition-transform duration-200 ease-in-out">
                     Hire Me
                 </button>
             </div>
@@ -192,7 +193,7 @@ const Section = () => {
 // Main Project Component
 const Project = () => {
     return (<>
-        <div className={'px-[2rem] mx-auto mt-24'}>
+        <div className={'px-[2rem] mx-auto xl:mt-24 xs:mt-10'}>
             <div className={'text-center mb-8'}>
                 <h2 className={' text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-2'}>Projects</h2>
                 <p className={'text-secondary/50  text-xl xs:text-xs xl:px-44 xs:px-1 '}>
