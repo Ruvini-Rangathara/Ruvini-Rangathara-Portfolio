@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function About() {
-    return (<>
+    return ( <div id={'about_id'}>
         <h2 className={"hidden xl:block text-center text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-2 mt-16"}>
             About Me
         </h2>
@@ -36,5 +36,5 @@ export default function About() {
                 alt="Ruvini Rangathara"
             />
         </div>
-    </>)
+    </div>)
 }

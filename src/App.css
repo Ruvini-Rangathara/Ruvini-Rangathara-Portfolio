@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 #root{
   font-family: poppins, serif;
   line-height: 20px;

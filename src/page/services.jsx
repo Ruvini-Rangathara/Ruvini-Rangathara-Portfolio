@@ -32,7 +32,7 @@ const Services = () => {
     }, [sectionInView]);
 
     return (
-        <section ref={sectionRef} className="mt-20 py-14 bg-gray-50 pb-10 flex flex-col justify-center items-center">
+        <section id={'service_id'} ref={sectionRef} className="mt-20 py-14 bg-gray-50 pb-10 flex flex-col justify-center items-center">
             <div className=" text-center">
                 <h2 className="text-center text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-2">
                     My Services
@@ -49,7 +49,6 @@ const Services = () => {
                     }}
                     speed={800}
                     modules={[Pagination, Autoplay]}
-                    navigation
                     breakpoints={{
                         640: { slidesPerView: 1, spaceBetween: 0 }, // xs size
                         768: { slidesPerView: 2, spaceBetween: 0 }, // sm size
