@@ -133,13 +133,8 @@ const ProjectModal = ({isOpen, onClose, project}) => {
 const ProjectSection = () => {
     const [selectedProject, setSelectedProject] = useState(null);
 
-    return (<section className="py-14 px-6 bg-gray-50">
+    return (<section className="py-14 px-6 ">
             <div className="container mx-auto px-4">
-                {/*<div className="grid grid-cols-1 md:grid-cols-3 gap-6">*/}
-                {/*    {projectData.slice(0, 6).map((project, index) => (*/}
-                {/*        <ProjectCard key={index} project={project} onClick={setSelectedProject} />*/}
-                {/*    ))}*/}
-                {/*</div>*/}
                 <Swiper
                     spaceBetween={30}
                     slidesPerView={1}
@@ -213,7 +208,7 @@ const Project = () => {
 
                 <div className="text-center">
                     <h2 className="text-accent text-3xl mb-2">Projects</h2>
-                    <p className="text-secondary/50 xl:text-xl xs:text-xs">
+                    <p className="text-secondary/50 text-xl xs:text-xs">
                         Explore my completed software development projects.
                     </p>
                 </div>

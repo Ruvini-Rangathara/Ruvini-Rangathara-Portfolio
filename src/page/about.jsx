@@ -2,12 +2,12 @@ import React from "react";
 
 export default function About() {
     return ( <div id={'about_id'}>
-        <h2 className={"hidden xl:block text-center text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-2 mt-16"}>
+        <h2 className={"hidden xl:block text-accent text-3xl mb-2 text-center mt-16"}>
             About Me
         </h2>
         <div className="flex justify-between xs:justify-center xs:items-center mt-16 xs:mt-4 mx-auto xl:px-48 xs:px-10 xl:flex-row xs:flex-col-reverse">
             <div className={'px-20 xs:px-0'}>
-                <p className={'px-4 xl:text-xs text-xs xs:text-xxs mt-2 xs:leading-relaxed leading-relaxed '}>
+                <p className={'px-4 xl:text-xs text-xs xs:text-xxs mt-2 xs:leading-relaxed xl:leading-relaxed '}>
                     Hi, I'm Ruvini Rangathara, a dedicated and passionate Full
                     Stack Software Engineer currently working as a Trainee Associate
                     Software Engineer at Kingteza Software Solutions. With a keen

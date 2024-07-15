@@ -39,7 +39,7 @@ const Contact = () => {
     return (<div id={'contact_id'}
                  className="xl:mb-14 xs:mb-4 xl:mt-14 xs:mt-2 xs:px-10 container mx-auto h-[80vh] max-w-4xl bg-primary px-6 lg:px-10 flex flex-col md:flex-row md:space-x-8 xs:h-full xs:text-sm">
         <div className="md:w-1/2">
-            <h2 className={" text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-2 mt-16"}>
+            <h2 className={"text-accent text-3xl mb-2 mt-16"}>
                 Let's Talk
             </h2>
             <p className="text-gray-600 mt-2 ">

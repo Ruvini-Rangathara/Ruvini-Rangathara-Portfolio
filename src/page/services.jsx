@@ -34,7 +34,7 @@ const Services = () => {
     return (<>
 
         <div className="text-center mt-16">
-            <h2 className="text-center text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-2">
+            <h2 className="text-accent text-3xl mb-2">
                 My Services
             </h2>
             <p className="text-secondary/50 text-center mb-4 text-xl xs:text-xs xl:px-44 ">
