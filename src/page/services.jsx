@@ -31,15 +31,19 @@ const Services = () => {
         }
     }, [sectionInView]);
 
-    return (
-        <section id={'service_id'} ref={sectionRef} className="mt-20 py-14 bg-gray-50 pb-10 flex flex-col justify-center items-center">
+    return (<>
+
+        <div className="text-center mt-16">
+            <h2 className="text-center text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-2">
+                My Services
+            </h2>
+            <p className="text-secondary/50 text-center mb-4 text-xl xs:text-xs xl:px-44 ">
+                Crafting Applications with Modern Tech Stack.
+            </p>
+        </div>
+        <section id={'service_id'} ref={sectionRef}
+                 className=" pb-14 pt-4 pb-10 flex flex-col justify-center items-center">
             <div className=" text-center">
-                <h2 className="text-center text-accent text-3xl xs:text-[25px] sm:text-4xl xl:text-[40px] mb-2">
-                    My Services
-                </h2>
-                <p className="text-secondary/50 text-center mb-10 text-xl xs:text-xs xl:px-44 ">
-                    Crafting Applications with Modern Tech Stack.
-                </p>
                 <Swiper
                     spaceBetween={0}
                     slidesPerView={1}
@@ -50,14 +54,14 @@ const Services = () => {
                     speed={800}
                     modules={[Pagination, Autoplay]}
                     breakpoints={{
-                        640: { slidesPerView: 1, spaceBetween: 0 }, // xs size
-                        768: { slidesPerView: 2, spaceBetween: 0 }, // sm size
-                        1024: { slidesPerView: 3, spaceBetween: 20 }, // md size
-                        1280: { slidesPerView: 3, spaceBetween: 20 }, // xl size
+                        640: {slidesPerView: 1, spaceBetween: 0}, // xs size
+                        768: {slidesPerView: 2, spaceBetween: 0}, // sm size
+                        1024: {slidesPerView: 3, spaceBetween: 20}, // md size
+                        1280: {slidesPerView: 3, spaceBetween: 20}, // xl size
                     }}
-                    className={"pb-14 xs:w-[90vw] xl:w-[80vw] mx-auto"}
+                    className={"pb-14 xs:w-[90vw] xl:w-[81vw] mx-auto"}
                 >
-                    <SwiperSlide className={'px-2 bg-purple-50 p-4 rounded-2xl'}>
+                    <SwiperSlide className={'px-2 bg-purple-50 border border-gray p-4 rounded-2xl'}>
                         <div className="flex flex-col items-center">
                             <div className="mb-2">
                                 <img
@@ -96,7 +100,7 @@ const Services = () => {
                         </div>
                     </SwiperSlide>
 
-                    <SwiperSlide className={'px-2 bg-blue-50 p-4 rounded-2xl'}>
+                    <SwiperSlide className={'px-2 bg-purple-50 border border-gray p-4 rounded-2xl'}>
                         <div className="flex flex-col items-center">
                             <div className="mb-2">
                                 <img
@@ -125,14 +129,15 @@ const Services = () => {
                                      height="16"/>
                                 <img src="https://cdn.simpleicons.org/redux/764ABC" alt="Redux Icon" width="16"
                                      height="16"/>
-                                <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap Icon" width="16"
+                                <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap Icon"
+                                     width="16"
                                      height="16"/>
                             </div>
                         </div>
                     </SwiperSlide>
 
                     {/* Other Technologies */}
-                    <SwiperSlide  className={'px-2 bg-pink-50 p-4 rounded-2xl'}>
+                    <SwiperSlide className={'px-2 bg-purple-50 border border-gray p-4 rounded-2xl'}>
                         <div className="flex flex-col items-center">
                             <div className="mb-2">
                                 <img
@@ -143,8 +148,8 @@ const Services = () => {
                             </div>
                             <h3 className="text-xs">Other Technologies</h3>
                             <p className="text-secondary/80 xl:text-xxs xs:text-xxs px-4 mt-2">
-                                Leverage a wide range of tools and platforms to deliver comprehensive
-                                solutions, including version control, cloud services, and continuous integration.
+                                Leverage a wide range of tools & platforms to deliver comprehensive
+                                solutions, including version control, cloud services & continuous integration.
                             </p>
                             <div className="flex-wrap mt-4 flex items-center justify-center space-x-2 px-24 gap-2">
                                 <img src="https://cdn.simpleicons.org/git/F05032" alt="Git Icon" width="16"
@@ -153,7 +158,8 @@ const Services = () => {
                                      height="16"/>
                                 <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker Icon" width="16"
                                      height="16"/>
-                                <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS Icon"
+                                <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png"
+                                     alt="AWS Icon"
                                      width="16"
                                      height="16"/>
                                 <img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="Google Cloud Icon"
@@ -164,7 +170,8 @@ const Services = () => {
                                 <img src="https://img.icons8.com/color/48/000000/windows-10.png" alt="Windows Icon"
                                      width="16"
                                      height="16"/>
-                                <img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firebase Icon" width="16"
+                                <img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firebase Icon"
+                                     width="16"
                                      height="16"/>
                             </div>
                         </div>
@@ -173,7 +180,8 @@ const Services = () => {
             </div>
 
 
-            <div ref={counterRef} className={'flex gap-2 justify-around xl:w-[50vw] xs:w-[80vw] mx-auto mt-6'}>
+            <div ref={counterRef}
+                 className={'flex gap-2 justify-around xl:w-[50vw] xs:w-[80vw] mx-auto xl:mt-2 mt-6 xs:mt-8'}>
                 {/*  experience*/}
                 <div
                     className={'flex justify-center items-center flex-col'}>
@@ -209,7 +217,9 @@ const Services = () => {
                 </div>
             </div>
 
-        </section>);
+        </section>
+
+    </>);
 };
 
 export default Services;

@@ -209,7 +209,7 @@ const Section = () => {
 // Main Project Component
 const Project = () => {
     return (<>
-            <div id={'project_id'} className="px-24 mx-auto mt-10">
+            <div id={'project_id'} className="xl:px-24 xs:px-0 px-24 mx-auto mt-10">
 
                 <div className="text-center">
                     <h2 className="text-accent text-3xl mb-2">Projects</h2>

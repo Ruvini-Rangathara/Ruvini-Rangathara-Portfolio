@@ -7,7 +7,7 @@ export default function About() {
         </h2>
         <div className="flex justify-between xs:justify-center xs:items-center mt-16 xs:mt-4 mx-auto xl:px-48 xs:px-10 xl:flex-row xs:flex-col-reverse">
             <div className={'px-20 xs:px-0'}>
-                <p className={'px-4 text-xs mt-2 leading-relaxed'}>
+                <p className={'px-4 xl:text-xs text-xs xs:text-xxs mt-2 xs:leading-relaxed leading-relaxed '}>
                     Hi, I'm Ruvini Rangathara, a dedicated and passionate Full
                     Stack Software Engineer currently working as a Trainee Associate
                     Software Engineer at Kingteza Software Solutions. With a keen
