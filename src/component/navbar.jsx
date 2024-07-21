@@ -1,5 +1,5 @@
 // src/components/BottomNavBar.jsx
-import React, {useState} from 'react';
+import React from 'react';
 import {
     FaComment,
     FaEnvelope,
@@ -8,7 +8,6 @@ import {
     FaUser,
     FaBriefcase
 } from 'react-icons/fa';
-import {FaMessage} from "react-icons/fa6";
 import { Link } from 'react-scroll';
 
 const NavBar = () => {
@@ -24,7 +23,7 @@ const NavBar = () => {
                 // onMouseEnter={showNavBar}
                 // onMouseLeave={hideNavBar}
             >
-                <div className="flex justify-center opacity-100 xl:gap-10 gap-4 xs:gap-2 p-1">
+                <div className="flex justify-center opacity-100 xl:gap-10 gap-4 xs:gap-3 p-1">
                     <Link to="home_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-xl p-2 hover:scale-105 cursor-pointer">
                         <FaHome />
                     </Link>

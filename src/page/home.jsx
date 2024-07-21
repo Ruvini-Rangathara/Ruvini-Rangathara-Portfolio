@@ -1,32 +1,41 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { Howl } from 'howler';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faVolumeMute, faVolumeUp} from "@fortawesome/free-solid-svg-icons";
 
 const roles = ["Web Developer", "Backend Developer", "Frontend Developer", "Full Stack Developer", "Software Engineer"];
 
 const Home = () => {
     const typewriterSound = useRef(null);
-    const [isVisible, setIsVisible] = useState(false);
-    const [isSoundMuted, setIsSoundMuted] = useState(false);
+    const [isSoundMuted, setIsSoundMuted] = useState(true);
 
     useEffect(() => {
         typewriterSound.current = new Howl({
-            src: ['/assets/mp3/typewriter-sound.mp3'],
-            volume: isSoundMuted ? 0 : 1.5,
+            src: '/assets/mp3/typewriter-sound.mp3',
+            volume: isSoundMuted ? 0 : 2.0,
             loop: false,
         });
 
-    }, [isVisible, isSoundMuted]);
-
-    const toggleSound = () => {
-        setIsSoundMuted(!isSoundMuted);
-        if (!isSoundMuted) {
+        if(!isSoundMuted) {
+            typewriterSound.current.play();
+        }else {
             typewriterSound.current.stop();
         }
+
+    }, [isSoundMuted]);
+
+    const toggleSound = () => {
+        setIsSoundMuted(prevState => {
+            const newState = !prevState;
+            typewriterSound.current.volume(newState ? 0 : 2.0);
+            return newState;
+        });
     };
 
     return (
-        <div id={'home_id'} className="w-[90vw] xs:w-[88vw] mx-auto bg-white rounded-lg overflow-hidden xl:mt-14 xs:mt-6">
+        <div id={'home_id'}
+             className="w-[90vw] xs:w-[88vw] mx-auto bg-white rounded-lg overflow-hidden xl:mt-14 xs:mt-6">
             <div
                 className="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 px-0 xs:px-4 xl:h-[80vh] xs:h-[88vh] w-full text-center flex justify-center">
                 <div className="my-auto">
@@ -54,10 +63,19 @@ const Home = () => {
 
 
                     <div className="text-center">
-                        <p className="text-[12px] text-secondary text-center px-auto xs:px-4 xs:mb-4 mb-2">
+                        <p className="text-[12px] text-secondary text-center px-auto xs:px-4 ">
                             I'm a Software Engineer from Sri Lanka, specializing in Web Development, <br/> Full Stack
                             Development, and UX/UI designing.
                         </p>
+
+                        <div className="flex justify-center items-center">
+                            <p className={'text-xxs text-gray-400 mr-2'}>( Tap to sound on</p>
+                            <button onClick={toggleSound} className="text-sm text-gray-400 focus:outline-none">
+                                <FontAwesomeIcon icon={isSoundMuted ? faVolumeMute : faVolumeUp}/>
+                            </button>
+                            <p className="text-xxs text-gray-400"> &nbsp;)</p>
+                        </div>
+
 
                         <div className="mt-4 flex items-center justify-center space-x-4">
                             <a href="#" className="text-gray-700"><i className="fab fa-github"></i></a>
@@ -67,12 +85,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
-            {/*<div className="flex ">*/}
-            {/*    <button onClick={toggleSound} className="text-sm text-gray-400 focus:outline-none">*/}
-            {/*        <FontAwesomeIcon icon={isSoundMuted ? faVolumeMute : faVolumeUp}/>*/}
-            {/*    </button>*/}
-            {/*</div>*/}
 
         </div>
     );

@@ -15,29 +15,25 @@ const App = () => {
 
     useEffect(() => {
         const handleLoad = () => {
-            console.log("Window loaded");
             setLoading(false);
         };
 
-        console.log("Setting up event listener for window load");
+        // console.log("Setting up event listener for window load");
         window.addEventListener("load", handleLoad);
 
         // Fallback to ensure loading state changes after a timeout
         const loadTimeout = setTimeout(() => {
-            console.log("Fallback loading state change");
             setLoading(false);
         }, 3000); // Adjust timeout duration as needed
 
         // Clean up the event listener
         return () => {
-            console.log("Cleaning up event listener for window load");
             window.removeEventListener("load", handleLoad);
             clearTimeout(loadTimeout);
         };
     }, []);
 
     useEffect(() => {
-        console.log("Loading state changed:", loading);
     }, [loading]);
 
     return (<div>
