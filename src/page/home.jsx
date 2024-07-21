@@ -31,7 +31,8 @@ const Home = () => {
                 className="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 px-0 xs:px-4 xl:h-[80vh] xs:h-[88vh] w-full text-center flex justify-center">
                 <div className="my-auto">
                     <span className="text-accent text-xl mb-1">Hello, mate 👋</span>
-                    <h1 className="text-accent text-3xl xs:text-[24px] sm:text-4xl xl:text-[40px] mb-4">
+                    <h1
+                        className="text-accent text-3xl xs:text-[24px] sm:text-4xl xl:text-[40px] mb-4">
                         I'm Ruvini Rangathara <br/> a {' '}
                         <span className="text-secondary animated-text">
                             <Typewriter

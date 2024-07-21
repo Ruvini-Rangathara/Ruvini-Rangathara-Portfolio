@@ -1,6 +1,12 @@
 import React from "react";
 
 export default function About() {
+    const downloadCV = () => {
+        // Replace with the actual URL to your CV file
+        const cvUrl = '/assets/pdf/CV-Resume.pdf';
+        window.open(cvUrl, '_blank');
+    };
+
     return ( <div id={'about_id'}>
         <h2 className={"hidden xl:block text-accent text-3xl mb-2 text-center mt-16"}>
             About Me
@@ -25,7 +31,9 @@ export default function About() {
                     <a href="#" className="text-green-500 hover:text-green-700"><i className="fab fa-whatsapp"></i></a>
                 </div>
 
-                <button className={'mx-4 px-4 py-2 mt-4 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 text-primary text-xs rounded-lg hover:scale-105 '}>
+                <button
+                    onClick={downloadCV}
+                    className={'mx-4 px-4 py-2 mt-4 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 text-primary text-xs rounded-lg hover:scale-105 '}>
                     Download CV
                 </button>
             </div>

@@ -8,6 +8,7 @@ import CountUp from "react-countup";
 import {useInView} from "react-intersection-observer";
 import SwiperCore from "swiper";
 
+
 SwiperCore.use([Pagination]);
 
 const Services = () => {
@@ -34,7 +35,8 @@ const Services = () => {
     return (<>
 
         <div className="text-center mt-16">
-            <h2 className="text-accent text-3xl mb-2">
+            <h2
+                className="text-accent text-3xl mb-2">
                 My Services
             </h2>
             <p className="text-secondary/50 text-center mb-4 text-xl xs:text-xs xl:px-44 ">
