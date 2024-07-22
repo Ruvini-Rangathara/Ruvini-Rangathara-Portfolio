@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import {FreeMode, Pagination} from "swiper/modules";
 import {FaQuoteLeft} from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const testimonials = [
     {
@@ -49,6 +51,14 @@ const TestimonialCard = ({testimonial, onClick}) => (<div onClick={() => onClick
 </div>);
 
 const Modal = ({isOpen, onClose, testimonial}) => {
+
+    useEffect(() => {
+        AOS.init({
+            once: false, // Whether animation should happen only once - while scrolling down
+            mirror: false, // Whether elements should animate out while scrolling past them
+        });
+    }, []);
+
     if (!isOpen) return null;
 
     // Handle click outside of the modal content
@@ -62,7 +72,10 @@ const Modal = ({isOpen, onClose, testimonial}) => {
         className=" fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center xs:p-6 z-10 modal-background"
         onClick={handleClickOutside}
     >
-        <div className="bg-white p-6 rounded-md shadow-md max-w-lg w-full">
+        <div
+            data-aos={"zoom-in"}
+            data-aos-duration="500"
+            className="bg-white p-6 rounded-md shadow-md max-w-lg w-full">
 
             <div className="flex items-center mb-4">
                 <img src={testimonial.image} alt='/user-profile.jpg' className="w-12 h-12 rounded-full mr-4"/>
@@ -80,14 +93,28 @@ const Modal = ({isOpen, onClose, testimonial}) => {
 };
 
 const Testimonial = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 3000,
+            once: false, // Whether animation should happen only once - while scrolling down
+            mirror: false, // Whether elements should animate out while scrolling past them
+        });
+    }, []);
+
     const [selectedTestimonial, setSelectedTestimonial] = useState(null);
 
     return (<div id={'testimonial_id'} className="xl:px-44 mb-6 xs:mb-0 xs:px-10  xs:mt-10">
-        <h2 className={'mt-8 text-accent text-3xl text-center mb-2'}>Recommendations</h2>
-        <p className={'text-secondary/50 text-center mb-6 xl:mb-8 text-xl xs:text-xs xl:px-44 xs:px-1 '}>
+        <h2
+            data-aos="fade-up"
+            className={'mt-8 text-accent text-3xl text-center mb-2'}>Recommendations</h2>
+        <p
+            data-aos="fade-up"
+            className={'text-secondary/50 text-center mb-6 xl:mb-8 text-xl xs:text-xs xl:px-44 xs:px-1 '}>
             What People Are Saying
         </p>
         <Swiper
+            data-aos="fade-up"
             spaceBetween={20}
             slidesPerView={1}
             pagination={{clickable: true}}

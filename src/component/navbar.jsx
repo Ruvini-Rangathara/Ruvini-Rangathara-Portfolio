@@ -18,7 +18,7 @@ const NavBar = () => {
 
     return (<div className={'w-full flex items-center justify-center'}>
             <div
-                className={'bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 z-10 fixed mx-auto rounded-xl bottom-0 xl:w-[50vw] md:w-[70vw] xs:w-[85vw]    '}
+                className={'bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 z-10 fixed mx-auto rounded-xl bottom-0 xl:w-[48vw] md:w-[70vw] xs:w-[85vw]    '}
                 // ${visible ? 'opacity-50' : 'opacity-0 transition-opacity duration-300'}
                 // onMouseEnter={showNavBar}
                 // onMouseLeave={hideNavBar}

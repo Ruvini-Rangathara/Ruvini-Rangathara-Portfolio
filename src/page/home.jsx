@@ -3,6 +3,8 @@ import { Typewriter } from 'react-simple-typewriter';
 import { Howl } from 'howler';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faVolumeMute, faVolumeUp} from "@fortawesome/free-solid-svg-icons";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const roles = ["Web Developer", "Backend Developer", "Frontend Developer", "Full Stack Developer", "Software Engineer"];
 
@@ -33,13 +35,21 @@ const Home = () => {
         });
     };
 
+    useEffect(() => {
+        AOS.init({
+            duration: 3000,
+            once: false, // Whether animation should happen only once - while scrolling down
+            mirror: false, // Whether elements should animate out while scrolling past them
+        });
+    }, []);
+
     return (
         <div id={'home_id'}
              className="w-[90vw] xs:w-[88vw] mx-auto bg-white rounded-lg overflow-hidden xl:mt-14 xs:mt-6">
             <div
                 className="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 px-0 xs:px-4 xl:h-[80vh] xs:h-[88vh] w-full text-center flex justify-center">
                 <div className="my-auto">
-                    <span className="text-accent text-xl mb-1">Hello, mate 👋</span>
+                    <span className="text-accent text-xl mb-1 xl:mb-2 xs:mb-4">Hello, mate 👋</span>
                     <h1
                         className="text-accent text-3xl xs:text-[24px] sm:text-4xl xl:text-[40px] mb-4">
                         I'm Ruvini Rangathara <br/> a {' '}
@@ -62,7 +72,9 @@ const Home = () => {
                     </h1>
 
 
-                    <div className="text-center">
+                    <div
+                        data-aos={'zoom-in'}
+                        className="text-center">
                         <p className="text-[12px] text-secondary text-center px-auto xs:px-4 ">
                             I'm a Software Engineer from Sri Lanka, specializing in Web Development, <br/> Full Stack
                             Development, and UX/UI designing.
@@ -77,7 +89,7 @@ const Home = () => {
                         </div>
 
 
-                        <div className="mt-4 flex items-center justify-center space-x-4">
+                        <div className="mt-4 xl:mt-4 xs:mt-6 flex items-center justify-center space-x-4">
                             <a href="#" className="text-gray-700"><i className="fab fa-github"></i></a>
                             <a href="#" className="text-blue-400"><i className="fab fa-linkedin"></i></a>
                             <a href="#" className="text-pink-400"><i className="fab fa-behance"></i></a>

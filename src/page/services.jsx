@@ -7,11 +7,20 @@ import {Autoplay, Pagination} from "swiper/modules";
 import CountUp from "react-countup";
 import {useInView} from "react-intersection-observer";
 import SwiperCore from "swiper";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 SwiperCore.use([Pagination]);
 
 const Services = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            once: false, // Whether animation should happen only once - while scrolling down
+            mirror: false, // Whether elements should animate out while scrolling past them
+        });
+    }, []);
 
     const [startCounting, setStartCounting] = useState(false);
 
@@ -34,7 +43,9 @@ const Services = () => {
 
     return (<>
 
-        <div className="text-center mt-16">
+        <div
+            data-aos="fade-up"
+            className="text-center mt-16">
             <h2
                 className="text-accent text-3xl mb-2">
                 My Services
@@ -47,6 +58,7 @@ const Services = () => {
                  className=" pb-14 pt-4 pb-10 flex flex-col justify-center items-center">
             <div className=" text-center">
                 <Swiper
+                    data-aos="zoom-in"
                     spaceBetween={0}
                     slidesPerView={1}
                     pagination={{clickable: true}}

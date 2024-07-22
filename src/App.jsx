@@ -24,7 +24,7 @@ const App = () => {
         // Fallback to ensure loading state changes after a timeout
         const loadTimeout = setTimeout(() => {
             setLoading(false);
-        }, 3000); // Adjust timeout duration as needed
+        }, 3000);
 
         // Clean up the event listener
         return () => {

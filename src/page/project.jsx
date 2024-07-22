@@ -5,6 +5,8 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import {FreeMode, Pagination} from "swiper/modules";
 import { Link as ScrollLink } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Sample data
 const projectData = [{
@@ -74,7 +76,9 @@ const projectData = [{
 
 
 // ProjectCard Component
-const ProjectCard = ({project, onClick}) => (<div
+const ProjectCard = ({project, onClick}) => (
+
+    <div
         onClick={() => onClick(project)}
         className="relative overflow-hidden shadow-lg cursor-pointer transition-transform transform hover:scale-105 w-full h-48 md:w-[25vw] md:h-[30vh]"
     >
@@ -88,6 +92,14 @@ const ProjectCard = ({project, onClick}) => (<div
 
 // ProjectModal Component
 const ProjectModal = ({isOpen, onClose, project}) => {
+
+    useEffect(() => {
+        AOS.init({
+            once: false, // Whether animation should happen only once - while scrolling down
+            mirror: false, // Whether elements should animate out while scrolling past them
+        });
+    }, []);
+
     const [mainImage, setMainImage] = useState('');
 
     useEffect(() => {
@@ -110,9 +122,14 @@ const ProjectModal = ({isOpen, onClose, project}) => {
 
     if (!isOpen || !project) return null;
 
-    return (<div onClick={onClose}
-                 className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-10">
-            <div className="bg-white p-6  shadow-md max-w-lg w-full">
+    return (
+        <div
+            onClick={onClose}
+            className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-10">
+            <div
+                data-aos={"zoom-in"}
+                data-aos-duration="500"
+                className="bg-white p-6  shadow-md max-w-lg w-full">
                 <img src={mainImage} alt="project" className="w-full h-64 object-cover mb-4"/>
                 <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
                 <hr className={'mb-2'}/>
@@ -131,11 +148,22 @@ const ProjectModal = ({isOpen, onClose, project}) => {
 
 // ProjectSection Component
 const ProjectSection = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 3000,
+            once: false, // Whether animation should happen only once - while scrolling down
+            mirror: false, // Whether elements should animate out while scrolling past them
+        });
+    }, []);
+
     const [selectedProject, setSelectedProject] = useState(null);
 
     return (<section className="py-14 px-6 ">
             <div className="container mx-auto px-4">
                 <Swiper
+                    data-aos="zoom-in"
+                    data-aos-offset="300"
+                    // data-aos-easing="ease-in-sine"
                     spaceBetween={30}
                     slidesPerView={1}
                     pagination={{clickable: true}}
@@ -151,7 +179,9 @@ const ProjectSection = () => {
                         },
                     }}
                 >
-                    {Array.from({length: Math.ceil(projectData.length / 2)}, (_, i) => (<SwiperSlide key={i}>
+                    {Array.from({length: Math.ceil(projectData.length / 2)}, (_, i) => (
+                        <SwiperSlide
+                            key={i}>
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6">
                                 {projectData.slice(i * 2, i * 2 + 2).map((project, index) => (
                                     <ProjectCard key={index} project={project} onClick={setSelectedProject}/>))}
@@ -172,10 +202,20 @@ const Section = () => {
         window.open(cvUrl, '_blank');
     };
 
+    useEffect(() => {
+        AOS.init({
+            duration: 3000,
+            once: false, // Whether animation should happen only once - while scrolling down
+            mirror: false, // Whether elements should animate out while scrolling past them
+        });
+    }, []);
+
     return (<section
         className="mt-10 relative bg-site bg-cover bg-no-repeat text-white py-20 flex justify-center items-center mb-6 xl:h-[50vh] xs:h-[40vh] xs:px-6">
         <div className="absolute inset-0 bg-accent bg-opacity-40"></div>
-        <div className="relative text-center max-w-2xl leading-[20px]">
+        <div
+            data-aos={'fade-up'}
+            className="relative text-center max-w-2xl leading-[20px]">
             <h1 className="xs:text-3xl text-4xl font-bold mb-4 ">Have any project on mind?</h1>
             <p className="mb-8 text-xl xs:text-xs">
                     <span className={'leading-[20px]'}>
@@ -203,10 +243,21 @@ const Section = () => {
 
 // Main Project Component
 const Project = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            once: false, // Whether animation should happen only once - while scrolling down
+            mirror: false, // Whether elements should animate out while scrolling past them
+        });
+    }, []);
+
     return (<>
             <div id={'project_id'} className="xl:px-24 xs:px-0 px-24 mx-auto mt-10">
 
-                <div className="text-center">
+                <div
+                    data-aos="fade-up"
+                    className="text-center">
                     <h2 className="text-accent text-3xl mb-2">Projects</h2>
                     <p className="text-secondary/50 text-xl xs:text-xs">
                         Explore my completed software development projects.
