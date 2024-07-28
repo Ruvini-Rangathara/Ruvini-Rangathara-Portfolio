@@ -14,7 +14,7 @@ export default function About() {
 
     const downloadCV = () => {
         // Replace with the actual URL to your CV file
-        const cvUrl = '/assets/pdf/CV-Resume.pdf';
+        const cvUrl = '/public/assets/pdf/CV-Resume.pdf';
         window.open(cvUrl, '_blank');
     };
 
@@ -63,7 +63,7 @@ export default function About() {
             <img
                 data-aos="zoom-in"
                 className="xl:w-[350px] xl:h-[350px] object-cover xl:ml-8 xs:ml-2 xs:w-[240px] xs:h-[240px]"
-                src="/assets/image/dp2.png"
+                src="/public/assets/image/dp2.png"
                 alt="Ruvini Rangathara"
             />
         </div>
