@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Ruvini-Rangathara.github.io/Ruvini-Rangathara-Portfolio",
   "scripts": {
     "dev": "vite",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "build": "vite build"
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
@@ -16,6 +19,7 @@
     "aos": "^2.3.4",
     "dotenv": "^16.4.5",
     "emailjs-com": "^3.2.0",
+    "firebase": "^10.12.4",
     "framer-motion": "^11.3.2",
     "next": "^14.2.4",
     "process": "^0.11.10",
@@ -36,6 +40,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "gh-pages": "^6.1.1",
     "howler": "^2.2.4",
     "postcss": "^8.4.38",
     "react-countup": "^6.5.3",
