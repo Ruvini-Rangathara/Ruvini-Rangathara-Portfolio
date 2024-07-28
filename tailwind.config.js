@@ -32,6 +32,7 @@ module.exports = {
       },
       backgroundImage: {
         site: 'url("/assets/image/Reports.jpeg")',
+        about: 'url("/assets/image/dp2.png")',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],

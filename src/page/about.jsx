@@ -26,7 +26,7 @@ export default function About() {
             About Me
         </h2>
         <div className="flex justify-between xs:justify-center xs:items-center mt-16 xs:mt-4 mx-auto xl:px-48 xs:px-10 xl:flex-row xs:flex-col-reverse">
-            <div className={'px-20 xs:px-0'}>
+            <div className={'px-20 xs:px-0 w-[60%]'}>
                 <p
                     data-aos="zoom-in"
                     className={'px-4 xl:text-xs text-xs xs:text-xxs mt-2 xs:leading-relaxed xl:leading-relaxed '}>
@@ -60,12 +60,13 @@ export default function About() {
 
             </div>
 
-            <img
-                data-aos="zoom-in"
-                className="xl:w-[350px] xl:h-[350px] object-cover xl:ml-8 xs:ml-2 xs:w-[240px] xs:h-[240px]"
-                src="/public/assets/image/dp2.png"
-                alt="Ruvini Rangathara"
-            />
+            <section>
+                <div
+                    data-aos="zoom-in"
+                    className="bg-about w-[40%] xl:w-[350px] xl:h-[350px] object-cover xl:ml-8 xs:ml-2 xs:w-[240px] xs:h-[240px]"
+                ></div>
+            </section>
+
         </div>
         </div>)
 }
