@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faVolumeMute, faVolumeUp} from "@fortawesome/free-solid-svg-icons";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import soundMP3 from '/assets/mp3/typewriter-sound.mp3';
 
 const roles = ["Web Developer", "Backend Developer", "Frontend Developer", "Full Stack Developer", "Software Engineer"];
 
@@ -14,7 +15,7 @@ const Home = () => {
 
     useEffect(() => {
         typewriterSound.current = new Howl({
-            src: '/assets/mp3/typewriter-sound.mp3',
+            src: soundMP3,
             volume: isSoundMuted ? 0 : 2.0,
             loop: false,
         });

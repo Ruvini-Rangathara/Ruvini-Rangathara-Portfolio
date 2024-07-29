@@ -63,3 +63,9 @@
         @apply w-full h-[150px] p-6 capitalize rounded-lg resize-none;
     }
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}

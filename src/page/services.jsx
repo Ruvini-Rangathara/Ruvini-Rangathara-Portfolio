@@ -78,11 +78,9 @@ const Services = () => {
                     <SwiperSlide className={'px-2 bg-purple-50 border border-gray p-4 rounded-2xl'}>
                         <div className="flex flex-col items-center">
                             <div className="mb-2">
-                                <img
-                                    src="/assets/image/backend-database.png"
-                                    alt="Backend Development"
-                                    className="w-12 h-12"
-                                />
+                                <div
+                                    className="w-12 h-12 bg-serviceBackend bg-no-repeat bg-cover"
+                                ></div>
                             </div>
                             <h3 className="text-xs">Backend Development</h3>
                             <p className="text-secondary/80 xl:text-xxs xs:text-xxs px-4 mt-2">
@@ -117,11 +115,9 @@ const Services = () => {
                     <SwiperSlide className={'px-2 bg-purple-50 border border-gray p-4 rounded-2xl'}>
                         <div className="flex flex-col items-center">
                             <div className="mb-2">
-                                <img
-                                    src="/assets/image/frontend.png"
-                                    alt="Frontend Development"
-                                    className="w-12 h-12"
-                                />
+                                <div
+                                    className="w-12 h-12 bg-serviceFrontend bg-no-repeat bg-cover"
+                                ></div>
                             </div>
                             <h3 className="text-xs">Frontend Development</h3>
                             <p className="text-secondary/80 xl:text-xxs xs:text-xxs px-4 mt-2">
@@ -154,11 +150,9 @@ const Services = () => {
                     <SwiperSlide className={'px-2 bg-purple-50 border border-gray p-4 rounded-2xl'}>
                         <div className="flex flex-col items-center">
                             <div className="mb-2">
-                                <img
-                                    src="/assets/image/other-tech.png"
-                                    alt="Other Technologies"
-                                    className="w-12 h-12"
-                                />
+                                <div
+                                    className="w-12 h-12 bg-serviceOther bg-no-repeat bg-cover"
+                                ></div>
                             </div>
                             <h3 className="text-xs">Other Technologies</h3>
                             <p className="text-secondary/80 xl:text-xxs xs:text-xxs px-4 mt-2">

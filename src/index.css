@@ -10,7 +10,6 @@
   font-weight: 400;
   color: #00001A;
 
-
   background-color: white;
 
   font-synthesis: none;
@@ -19,5 +18,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+body{
+  overflow-x: hidden;
+}
 

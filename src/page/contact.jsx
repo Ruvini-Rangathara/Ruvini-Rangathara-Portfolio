@@ -94,7 +94,9 @@ const Contact = () => {
             </div>
             <div className="md:w-1/2 mt-8 md:mt-0 flex flex-col items-center justify-center hidden xl:block">
                 <div className="flex justify-center mt-8  md:pt-8">
-                    <img src="/assets/image/contact1.png" alt="Contact" className="w-64 mt-20"/>
+                    <div>
+                        <div className="bg-contact bg-cover bg-no-repeat w-64 mt-20"></div>
+                    </div>
                 </div>
                 <div className="mt-2 xl:mt-6 text-center  font-poppins">
                     <p>Ruvini Rangathara</p>

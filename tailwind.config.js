@@ -33,6 +33,14 @@ module.exports = {
       backgroundImage: {
         site: 'url("/assets/image/Reports.jpeg")',
         about: 'url("/assets/image/dp2.png")',
+        contact: 'url("/assets/image/contact1.png")',
+        profileRaveena: 'url(/assets/image/mrs_raveena.jpeg)',
+        profileYasendra: 'url(/assets/image/mr_yasendra.jpeg)',
+        profileDanuja: 'url(/assets/image/mr_danuja.jpeg)',
+        profileSachini: 'url(/assets/image/miss_sachini.jpeg)',
+        serviceBackend: 'url(/assets/image/backend-database.png)',
+        serviceFrontend: 'url(/assets/image/frontend.png)',
+        serviceOther: 'url(/assets/image/other-tech.png)',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],

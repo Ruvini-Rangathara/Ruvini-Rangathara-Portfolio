@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import CVPath from '/assets/pdf/CV-Resume.pdf';
 
 export default function About() {
 
@@ -14,7 +15,7 @@ export default function About() {
 
     const downloadCV = () => {
         // Replace with the actual URL to your CV file
-        const cvUrl = '/assets/pdf/CV-Resume.pdf';
+        const cvUrl = CVPath;
         window.open(cvUrl, '_blank');
     };
 
