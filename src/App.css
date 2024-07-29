@@ -101,3 +101,15 @@ html {
   animation: spin 2s ease infinite;
   animation-delay: -0.5s;
 }
+
+
+
+/*services*/
+.service-name {
+  border: 1px solid #9ca3af;
+  border-radius: 5px;
+  padding: 0 5px;
+  font-size: 11px;
+  background-color: white;
+  color: slategrey;
+}

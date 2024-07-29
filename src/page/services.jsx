@@ -9,6 +9,7 @@ import {useInView} from "react-intersection-observer";
 import SwiperCore from "swiper";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import '../App.css';
 
 SwiperCore.use([Pagination]);
 
@@ -87,26 +88,34 @@ const Services = () => {
                                 Develop robust and scalable backend systems using modern
                                 frameworks and technologies to ensure high performance and security.
                             </p>
-                            <div className="mt-4 flex flex-wrap items-center justify-center space-x-2 px-24 gap-2">
-                                <img src="https://cdn.simpleicons.org/node.js/339933" alt="Node.js Icon" width="16"
-                                     height="16"/>
-                                <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"
-                                     alt="Java Icon" width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/spring/6DB33F" alt="Spring Icon" width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/springboot/6DB33F" alt="Spring Boot Icon"
-                                     width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python Icon" width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB Icon" width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/postgresql/336791" alt="PostgreSQL Icon"
-                                     width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL Icon" width="16"
-                                     height="16"/>
+                            <div className="mt-4 flex flex-wrap items-center justify-center px-8 gap-1">
+                                <div className={'service-name'} >Java</div>
+                                <div className={'service-name'} >NodeJs</div>
+                                <div className={'service-name'} >Spring</div>
+                                <div className={'service-name'} >SpringBoot</div>
+                                <div className={'service-name'} >Python</div>
+                                <div className={'service-name'} >MongoDB</div>
+                                <div className={'service-name'} >MySQL</div>
+                                <div className={'service-name'} >PostgreSQL</div>
+                                {/*<img src="https://cdn.simpleicons.org/node.js/339933" alt="Node.js Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"*/}
+                                {/*     alt="Java Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/spring/6DB33F" alt="Spring Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/springboot/6DB33F" alt="Spring Boot Icon"*/}
+                                {/*     width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/python/3776AB" alt="Python Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/postgresql/336791" alt="PostgreSQL Icon"*/}
+                                {/*     width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL Icon" width="16"*/}
+                                {/*     height="16"/>*/}
 
                             </div>
                         </div>
@@ -124,24 +133,31 @@ const Services = () => {
                                 Create dynamic and responsive user interfaces with cutting-edge
                                 frontend technologies to provide an exceptional user experience.
                             </p>
-                            <div className="flex-wrap mt-4 flex items-center justify-center space-x-2 px-24 gap-2 ">
-                                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5 Icon" width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3 Icon" width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript Icon"
-                                     width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React Icon" width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript Icon"
-                                     width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/redux/764ABC" alt="Redux Icon" width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap Icon"
-                                     width="16"
-                                     height="16"/>
+                            <div className="flex-wrap mt-4 flex items-center justify-center px-8 gap-1 ">
+                                <div className={'service-name'}>HTML5</div>
+                                <div className={'service-name'}>CSS3</div>
+                                <div className={'service-name'}>Javascript</div>
+                                <div className={'service-name'}>Typescript</div>
+                                <div className={'service-name'}>React</div>
+                                <div className={'service-name'}>Redux</div>
+                                <div className={'service-name'}>Bootstrap</div>
+                                {/*<img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5 Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3 Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript Icon"*/}
+                                {/*     width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/react/61DAFB" alt="React Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript Icon"*/}
+                                {/*     width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/redux/764ABC" alt="Redux Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap Icon"*/}
+                                {/*     width="16"*/}
+                                {/*     height="16"/>*/}
                             </div>
                         </div>
                     </SwiperSlide>
@@ -159,28 +175,36 @@ const Services = () => {
                                 Leverage a wide range of tools & platforms to deliver comprehensive
                                 solutions, including version control, cloud services & continuous integration.
                             </p>
-                            <div className="flex-wrap mt-4 flex items-center justify-center space-x-2 px-24 gap-2">
-                                <img src="https://cdn.simpleicons.org/git/F05032" alt="Git Icon" width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub Icon" width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker Icon" width="16"
-                                     height="16"/>
-                                <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png"
-                                     alt="AWS Icon"
-                                     width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="Google Cloud Icon"
-                                     width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/linux/000000" alt="Linux Icon" width="16"
-                                     height="16"/>
-                                <img src="https://img.icons8.com/color/48/000000/windows-10.png" alt="Windows Icon"
-                                     width="16"
-                                     height="16"/>
-                                <img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firebase Icon"
-                                     width="16"
-                                     height="16"/>
+                            <div className="flex-wrap mt-4 flex items-center justify-center px-8 gap-1">
+                                <div className={'service-name'}>Git</div>
+                                <div className={'service-name'}>GitHub</div>
+                                <div className={'service-name'}>Docker</div>
+                                <div className={'service-name'}>AWS</div>
+                                <div className={'service-name'}>GCP</div>
+                                <div className={'service-name'}>Linux</div>
+                                <div className={'service-name'}>Windows</div>
+                                <div className={'service-name'}>Firebase</div>
+                                {/*<img src="https://cdn.simpleicons.org/git/F05032" alt="Git Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/github/181717" alt="GitHub Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://img.icons8.com/color/48/000000/amazon-web-services.png"*/}
+                                {/*     alt="AWS Icon"*/}
+                                {/*     width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="Google Cloud Icon"*/}
+                                {/*     width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/linux/000000" alt="Linux Icon" width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://img.icons8.com/color/48/000000/windows-10.png" alt="Windows Icon"*/}
+                                {/*     width="16"*/}
+                                {/*     height="16"/>*/}
+                                {/*<img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firebase Icon"*/}
+                                {/*     width="16"*/}
+                                {/*     height="16"/>*/}
                             </div>
                         </div>
                     </SwiperSlide>
