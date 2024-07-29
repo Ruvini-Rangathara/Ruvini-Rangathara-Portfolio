@@ -49,6 +49,7 @@ module.exports = {
         'xs': ['14px', '18px'],
         'xl': ['17px', '20px'],
         'xxs': ['12px', '16px'],
+        'vl': ['20px', '24px'],
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',

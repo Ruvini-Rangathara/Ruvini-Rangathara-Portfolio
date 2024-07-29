@@ -24,22 +24,22 @@ const NavBar = () => {
                 // onMouseLeave={hideNavBar}
             >
                 <div className="flex justify-center opacity-100 xl:gap-10 gap-4 xs:gap-3 p-1">
-                    <Link to="home_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-xl p-2 hover:scale-105 cursor-pointer">
+                    <Link to="home_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-vl p-2 hover:scale-105 cursor-pointer">
                         <FaHome />
                     </Link>
-                    <Link to="about_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-xl p-2 hover:scale-105 cursor-pointer">
+                    <Link to="about_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-vl p-2 hover:scale-105 cursor-pointer">
                         <FaUser />
                     </Link>
-                    <Link to="service_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-xl p-2 hover:scale-105 cursor-pointer">
+                    <Link to="service_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-vl p-2 hover:scale-105 cursor-pointer">
                         <FaBriefcase />
                     </Link>
-                    <Link to="project_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-xl p-2 hover:scale-105 cursor-pointer">
+                    <Link to="project_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-vl p-2 hover:scale-105 cursor-pointer">
                         <FaFolder />
                     </Link>
-                    <Link to="testimonial_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-xl p-2 hover:scale-105 cursor-pointer">
+                    <Link to="testimonial_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-vl p-2 hover:scale-105 cursor-pointer">
                         <FaComment />
                     </Link>
-                    <Link to="contact_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-xl p-2 hover:scale-105 cursor-pointer">
+                    <Link to="contact_id" smooth={true} duration={300} className="text-white md:text-2xl xl:text-2xl xs:text-vl p-2 hover:scale-105 cursor-pointer">
                         <FaEnvelope />
                     </Link>
                 </div>
