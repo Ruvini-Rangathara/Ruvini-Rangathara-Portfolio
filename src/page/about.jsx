@@ -60,7 +60,7 @@ export default function About() {
                             <i className="fab fa-twitter"></i>
                         </a>
                         <a
-                            href="https://wa.me/0786628489"
+                            href="https://wa.me/+94786628489"
                             target="_blank"
                             rel="noopener noreferrer"
                            className="text-green-500 hover:text-green-700"
