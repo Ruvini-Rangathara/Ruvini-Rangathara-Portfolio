@@ -48,7 +48,7 @@ const Home = () => {
         <div id={'home_id'}
              className="w-[90vw] xs:h-[100vh] xs:w-[88vw] mx-auto bg-white rounded-lg overflow-hidden xl:mt-14 xs:mt-6 ">
             <div
-                className=" my-10 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 px-0 xs:px-4 xl:h-[80vh] xs:h-[86vh] w-full text-center flex justify-center">
+                className=" my-10 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 px-0 xs:px-4 xl:h-[80vh] xs:h-[80vh] w-full text-center flex justify-center">
                 <div className="my-auto">
                     <span className="text-accent text-xl mb-1 xl:mb-2 xs:mb-4">Hello, mate 👋</span>
                     <h1
