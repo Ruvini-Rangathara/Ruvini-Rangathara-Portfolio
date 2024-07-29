@@ -253,7 +253,7 @@ const Project = () => {
                 data-aos="fade-up"
                 className="text-center">
                 <h2 className="text-accent text-3xl mb-2">Projects</h2>
-                <p className="text-secondary/50 text-xl xs:text-xs">
+                <p className="text-secondary/50 text-xl xs:text-xs xs:px-8">
                     Explore my completed software development projects.
                 </p>
             </div>
