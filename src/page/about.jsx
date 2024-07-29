@@ -46,10 +46,27 @@ export default function About() {
                     </p>
                     <div
                         className="mt-2 flex justify-start space-x-4 px-4 ">
-                        <a href="#" className="text-pink-500 hover:text-pink-700"><i
-                            className="fa-regular fa-envelope"></i></a>
-                        <a href="#" className="text-blue-300 hover:text-blue-500"><i className="fab fa-twitter"></i></a>
-                        <a href="#" className="text-green-500 hover:text-green-700"><i className="fab fa-whatsapp"></i></a>
+                        <a href="mailto:ruvinisubhasinghe200009@gmail.com"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="text-pink-500 hover:text-pink-700"
+                        >
+                            <i className="fa-regular fa-envelope"></i></a>
+                        <a  href="https://x.com/Ruvini489"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-300 hover:text-blue-500"
+                        >
+                            <i className="fab fa-twitter"></i>
+                        </a>
+                        <a
+                            href="https://wa.me/0786628489"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                           className="text-green-500 hover:text-green-700"
+                        >
+                            <i className="fab fa-whatsapp"></i>
+                        </a>
                     </div>
 
                     <button

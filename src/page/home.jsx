@@ -91,9 +91,12 @@ const Home = () => {
 
 
                         <div className="mt-4 xl:mt-4 xs:mt-6 flex items-center justify-center space-x-4">
-                            <a href="#" className="text-gray-700"><i className="fab fa-github"></i></a>
-                            <a href="#" className="text-blue-400"><i className="fab fa-linkedin"></i></a>
-                            <a href="#" className="text-pink-400"><i className="fab fa-behance"></i></a>
+                            <a href="https://github.com/Ruvini-Rangathara" target="_blank"
+                               rel="noopener noreferrer" className="text-gray-700 "><i className="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ruvini-rangathara-747756229/" target="_blank"
+                               rel="noopener noreferrer" className="text-blue-400"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://www.behance.net/ruvini00" target="_blank"
+                               rel="noopener noreferrer" className="text-pink-400"><i className="fab fa-behance"></i></a>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import * as emailjs from "emailjs-com";
+import contactImg from '/assets/image/contact1.png';
 
 const Contact = () => {
     const initialFormState = {
@@ -93,18 +94,37 @@ const Contact = () => {
                 </form>
             </div>
             <div className="md:w-1/2 mt-8 md:mt-0 flex flex-col items-center justify-center hidden xl:block">
-                <div className="flex justify-center mt-8  md:pt-8">
-                    <div>
-                        <div className="bg-contact bg-cover bg-no-repeat w-64 mt-20"></div>
+                <div className="flex justify-center mt-8 md:pt-8 ">
+                    <div className={'xl:pt-20 pt-0'}>
+                        <img src={contactImg} alt="Contact" className="w-64"/>
                     </div>
                 </div>
                 <div className="mt-2 xl:mt-6 text-center  font-poppins">
                     <p>Ruvini Rangathara</p>
                     <p className="mt-2">ruvinisubhasinghe200009@gmail.com</p>
                     <div className="mt-4 flex justify-center space-x-4">
-                        <a href="#" className="text-blue-500 hover:text-blue-700"><i className="fab fa-facebook-f"></i></a>
-                        <a href="#" className="text-blue-300 hover:text-blue-500"><i className="fab fa-twitter"></i></a>
-                        <a href="#" className="text-pink-500 hover:text-pink-700"><i className="fab fa-instagram"></i></a>
+                        <a
+                            href="https://web.facebook.com/ruvini.rangathara.96"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="text-blue-500 hover:text-blue-700"
+                        >
+                            <i className="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/Ruvini489"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="text-blue-300 hover:text-blue-500"
+                        >
+                            <i className="fab fa-twitter"></i></a>
+                        <a
+                            href="https://www.instagram.com/ruvinirangathara/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="text-pink-500 hover:text-pink-700"
+                        >
+                            <i className="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
