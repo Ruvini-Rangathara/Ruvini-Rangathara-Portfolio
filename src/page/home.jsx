@@ -46,7 +46,7 @@ const Home = () => {
 
     return (
         <div id={'home_id'}
-             className="w-[90vw] xs:h-[100vh] xs:w-[88vw] mx-auto bg-white rounded-lg overflow-hidden border flex justify-center items-center ">
+             className="w-[90vw] xs:h-[90vh] xs:w-[88vw] mx-auto bg-white rounded-lg overflow-hidden flex justify-center items-center ">
             <div
                 className=" bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 px-0 xs:px-4 xl:h-[82vh] xs:h-[80vh] w-full text-center flex justify-center rounded-lg">
                 <div className="my-auto">
