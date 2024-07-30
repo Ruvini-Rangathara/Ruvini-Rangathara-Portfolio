@@ -74,7 +74,7 @@ const ProjectCard = ({project, onClick}) => (
 
     <div
         onClick={() => onClick(project)}
-        className="relative overflow-hidden shadow-lg cursor-pointer transition-transform transform hover:scale-105 w-full xl:w-full h-48 xl:h-48 xs:h-44 md:w-[25vw] md:h-[30vh]"
+        className="rounded-xl relative overflow-hidden shadow-lg cursor-pointer transition-transform transform hover:scale-105 w-full xl:w-full h-48 xl:h-48 xs:h-48 md:w-[25vw] md:h-[30vh]"
     >
         <img src={project.image} alt={project.title} className="w-full h-full object-cover"/>
         <div className="absolute top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex items-end p-4">
@@ -119,12 +119,12 @@ const ProjectModal = ({isOpen, onClose, project}) => {
     return (
         <div
             onClick={onClose}
-            className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-10">
+            className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-10 p-2 ">
             <div
                 data-aos={"zoom-in"}
                 data-aos-duration="500"
-                className="bg-white p-6  shadow-md max-w-lg w-full">
-                <img src={mainImage} alt="project" className="w-full h-64 object-cover mb-4"/>
+                className="bg-white p-6 shadow-md max-w-lg w-full rounded-xl">
+                <img src={mainImage} alt="project" className="w-full h-64 xl:h-64 xs:h-48 object-cover mb-4 rounded-xl"/>
                 <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
                 <hr className={'mb-2'}/>
                 <p className="text-xs">{project.description}</p>
@@ -153,7 +153,7 @@ const ProjectSection = () => {
     const [selectedProject, setSelectedProject] = useState(null);
 
     return (<section className="py-14 xl:py-14 xs:py-4 ">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 xs:px-0 xl:px-8">
             <Swiper
                 data-aos="zoom-in"
                 data-aos-offset="300"
@@ -162,21 +162,21 @@ const ProjectSection = () => {
                 slidesPerView={1}
                 pagination={{clickable: true}}
                 modules={[FreeMode, Pagination]}
-                className="pb-14 "
+                className="pb-14"
                 breakpoints={{
                     640: {
                         slidesPerView: 1, spaceBetween: 20,
                     }, 768: {
                         slidesPerView: 2, spaceBetween: 40,
                     }, 1024: {
-                        slidesPerView: 3, spaceBetween: 50,
+                        slidesPerView: 3, spaceBetween: 40,
                     },
                 }}
             >
                 {Array.from({length: Math.ceil(projectData.length / 2)}, (_, i) => (
                     <SwiperSlide
                         key={i}>
-                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6 ">
                             {projectData.slice(i * 2, i * 2 + 2).map((project, index) => (
                                 <ProjectCard key={index} project={project} onClick={setSelectedProject}/>))}
                         </div>
@@ -253,7 +253,7 @@ const Project = () => {
                 data-aos="fade-up"
                 className="text-center">
                 <h2 className="text-accent text-3xl mb-2">Projects</h2>
-                <p className="text-secondary/50 text-xl xs:text-xs xs:px-8">
+                <p className="text-secondary/50 text-xl xs:text-xs xs:px-8 mb-4">
                     Explore my completed software development projects.
                 </p>
             </div>

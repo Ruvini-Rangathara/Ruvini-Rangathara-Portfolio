@@ -94,6 +94,7 @@ const Services = () => {
                                 <div className={'service-name'} >Spring</div>
                                 <div className={'service-name'} >SpringBoot</div>
                                 <div className={'service-name'} >Python</div>
+                                <div className={'service-name'} >NestJs</div>
                                 <div className={'service-name'} >MongoDB</div>
                                 <div className={'service-name'} >MySQL</div>
                                 <div className={'service-name'} >PostgreSQL</div>
@@ -139,8 +140,11 @@ const Services = () => {
                                 <div className={'service-name'}>Javascript</div>
                                 <div className={'service-name'}>Typescript</div>
                                 <div className={'service-name'}>React</div>
+                                <div className={'service-name'}>React Native</div>
                                 <div className={'service-name'}>Redux</div>
                                 <div className={'service-name'}>Bootstrap</div>
+                                <div className={'service-name'}>MUI</div>
+                                <div className={'service-name'}>DesyUI</div>
                                 {/*<img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5 Icon" width="16"*/}
                                 {/*     height="16"/>*/}
                                 {/*<img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3 Icon" width="16"*/}
@@ -180,7 +184,7 @@ const Services = () => {
                                 <div className={'service-name'}>GitHub</div>
                                 <div className={'service-name'}>Docker</div>
                                 <div className={'service-name'}>AWS</div>
-                                <div className={'service-name'}>GCP</div>
+                                <div className={'service-name'}>Google Cloud Platform</div>
                                 <div className={'service-name'}>Linux</div>
                                 <div className={'service-name'}>Windows</div>
                                 <div className={'service-name'}>Firebase</div>
@@ -213,7 +217,7 @@ const Services = () => {
 
 
             <div ref={counterRef}
-                 className={'flex gap-2 justify-around xl:w-[50vw] xs:w-[80vw] mx-auto xl:mt-2 mt-6 xs:mt-8'}>
+                 className={'flex gap-2 justify-around xl:w-[50vw] xs:w-[80vw] mx-auto xl:mt-2 mt-6 xs:mt-12'}>
                 {/*  experience*/}
                 <div
                     className={'flex justify-center items-center flex-col'}>

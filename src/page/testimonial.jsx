@@ -10,16 +10,17 @@ import 'aos/dist/aos.css';
 
 const testimonials = [{
     id: 1,
-    image: 'bg-profileRaveena',
-    name: "Tharinda Raveena Serugollage",
-    role: "Executive Academic Administration at IJSE",
-    content: "I am pleased to write this recommendation for Ruvini Rangathara, who has consistently proven herself as an exceptional student in Institute and Software engineering (IJSE). Ruvini has not only demonstrated a deep understanding of the subject matter but has also consistently achieved outstanding results, showcasing her commitment to academic excellence.\n" + "\n" + "Moreover, beyond her academic achievements, Ruvini possesses excellent communication and interpersonal skills. " + "\n" + " As a demonstrator, she has shown a remarkable ability to convey complex technical information in an accessible manner, fostering an inclusive learning environment for other students. \n" + "\n" + "In conclusion, I have no doubt that Ruvini Rangathara would excel as a demonstrator in software engineering. Her academic achievements, coupled with her interpersonal skills, make her an ideal candidate to inspire and guide fellow students. I highly recommend Ruvini for any position that requires a combination of technical expertise, communication skills, and a passion for fostering academic excellence."
-}, {
-    id: 2,
     image: "bg-profileYasendra",
     name: "Yasendra Darshana",
     role: "Senior Manager - Academic Affairs at ISE",
     content: "I had the pleasure of getting to know Ms Ruvini Rangathara during her time as a student at the IJSE. She possesses excellent skills in the field of software engineering and demonstrates a positive attitude towards her work. Ruvini is motivated, friendly and easy to work with. I highly recommend her for any software engineering position"
+
+}, {
+    id: 2,
+    image: 'bg-profileRaveena',
+    name: "Tharinda Raveena Serugollage",
+    role: "Executive Academic Administration at IJSE",
+    content: "I am pleased to write this recommendation for Ruvini Rangathara, who has consistently proven herself as an exceptional student in Institute and Software engineering (IJSE). Ruvini has not only demonstrated a deep understanding of the subject matter but has also consistently achieved outstanding results, showcasing her commitment to academic excellence.\n" + "\n" + "Moreover, beyond her academic achievements, Ruvini possesses excellent communication and interpersonal skills. " + "\n" + " As a demonstrator, she has shown a remarkable ability to convey complex technical information in an accessible manner, fostering an inclusive learning environment for other students. \n" + "\n" + "In conclusion, I have no doubt that Ruvini Rangathara would excel as a demonstrator in software engineering. Her academic achievements, coupled with her interpersonal skills, make her an ideal candidate to inspire and guide fellow students. I highly recommend Ruvini for any position that requires a combination of technical expertise, communication skills, and a passion for fostering academic excellence."
 }, {
     id: 3,
     image: "bg-profileDanuja",
@@ -117,7 +118,7 @@ const Testimonial = () => {
             slidesPerView={1}
             pagination={{clickable: true}}
             modules={[FreeMode, Pagination]}
-            className="pb-14"
+            className="pb-10"
             breakpoints={{
                 640: {
                     slidesPerView: 1,
