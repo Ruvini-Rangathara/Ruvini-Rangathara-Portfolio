@@ -222,7 +222,7 @@ const Services = () => {
                 <div
                     className={'flex justify-center items-center flex-col'}>
                     <div className={'text-[22px] xl:text-3xl text-accent mb-2'}>
-                        {startCounting && <CountUp start={0} end={10} duration={4}/>} +
+                        {startCounting && <CountUp start={0} end={2} duration={4}/>} +
                     </div>
                     <div
                         className={'text-center px-1 text-secondary xl:text-xs text-xs xs:text-[12px] uppercase tracking-[1px] max-w-[100px]'}>Years
@@ -244,7 +244,7 @@ const Services = () => {
                 <div
                     className={'flex justify-center items-center flex-col'}>
                     <div className={'text-[22px] xl:text-3xl text-accent mb-2'}>
-                        {startCounting && <CountUp start={0} end={50} duration={4}/>} +
+                        {startCounting && <CountUp start={0} end={25} duration={4}/>} +
                     </div>
                     <div
                         className={'text-center px-1 text-secondary xl:text-xs text-xs  xs:text-[12px] uppercase tracking-[1px] max-w-[100px]'}>Finished

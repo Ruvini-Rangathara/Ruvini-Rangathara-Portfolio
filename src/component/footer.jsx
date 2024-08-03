@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const Footer = () => {
     return (<
         footer className="bg-primary text-secondary mt-6 xs:mt-0 mb-20">
-            <hr className="bg-accent/10 mb-4 xs:mt-12 xl:mt-0"/>
+            <hr className="bg-accent/10 mb-4 xs:mt-20 xl:mt-0"/>
             <div className="container mx-auto text-center">
                 {/*<h2 className="text-lg font-semibold mb-4">Ruvini Rangathara</h2>*/}
                 {/*<nav className="mb-4">*/}
