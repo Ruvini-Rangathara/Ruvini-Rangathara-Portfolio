@@ -81,7 +81,7 @@ export default function About() {
             <section>
                 <div
                     data-aos="zoom-in"
-                    className="bg-about bg-cover bg-no-repeat  xl:w-[330px] xl:h-[330px] object-cover xl:ml-8 xs:ml-2 xs:w-[240px] xs:h-[240px]"
+                    className="bg-about bg-cover bg-no-repeat  xl:w-[330px] xl:h-[330px] object-cover xl:ml-8 xs:ml-2 xs:w-[260px] xs:h-[260px]"
                 ></div>
             </section>
 

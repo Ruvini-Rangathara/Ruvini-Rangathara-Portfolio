@@ -12,7 +12,7 @@ const testimonials = [{
     id: 1,
     image: "bg-profileYasendra",
     name: "Yasendra Darshana",
-    role: "Senior Manager - Academic Affairs at ISE",
+    role: "Senior Manager - Academic Affairs at IJSE",
     content: "I had the pleasure of getting to know Ms Ruvini Rangathara during her time as a student at the IJSE. She possesses excellent skills in the field of software engineering and demonstrates a positive attitude towards her work. Ruvini is motivated, friendly and easy to work with. I highly recommend her for any software engineering position"
 
 }, {
@@ -85,7 +85,7 @@ const Modal = ({isOpen, onClose, testimonial}) => {
                 </div>
             </div>
             <div className={'mb-4'}>
-                <FaQuoteLeft className={'text-lg text-accent/20 mx-auto md:mx-0'}/>
+                <FaQuoteLeft className={'text-lg text-accent/20 mx-auto md:mx-0 ml-0'}/>
             </div>
             <p className={'text-xl xs:text-xs text-secondary/80 '}>{testimonial.content}</p>
         </div>
