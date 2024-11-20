@@ -32,7 +32,7 @@ export default function About() {
                     data-aos="zoom-in"
                     className={'px-4 xl:text-xs text-xs xs:text-xxs mt-2 xs:leading-relaxed xl:leading-relaxed '}>
                     Hi, I'm Ruvini Rangathara, a dedicated and passionate Full
-                    Stack Software Engineer currently working as a Trainee Associate
+                    Stack Software Engineer currently working as an Associate
                     Software Engineer at Kingteza Software Solutions. With a keen
                     interest in developing efficient and scalable software solutions,
                     I am always eager to take on new challenges and expand my technical expertise.
@@ -40,9 +40,9 @@ export default function About() {
                 <div data-aos={'fade-up'}>
                     <p
                         className="px-4  text-[12px] text-gray-500 xl:mx-0 mb-2 mt-4">
-                        Trainee Associate Software Engineer
+                        Associate Software Engineer
                         <br/>
-                        <span className={''}>@ Kingteza Software Solutions<br/> ( 2024 Apr - Present )</span>
+                        <span className={''}>@ Kingteza Software Solutions<br/> ( 2024 Nov - Present )</span>
                     </p>
                     <div
                         className="mt-2 flex justify-start space-x-4 px-4 ">

@@ -47,7 +47,7 @@ const TestimonialCard = ({testimonial, onClick}) => (<div onClick={() => onClick
     <div className={'mb-2'}>
         <FaQuoteLeft className={'text-lg text-accent/20 mx-auto xs:mx-0'}/>
     </div>
-    <p className="xl:line-clamp-2 xs:line-clamp-6 text-xl xs:text-xs text-secondary/80 ">{testimonial.content}</p>
+    <p className="xl:line-clamp-4 xs:line-clamp-6 text-xl xs:text-xs text-secondary/80 ">{testimonial.content}</p>
 </div>);
 
 const Modal = ({isOpen, onClose, testimonial}) => {

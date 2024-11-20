@@ -131,7 +131,7 @@ const Services = () => {
                             </div>
                             <h3 className="text-xs">Frontend Development</h3>
                             <p className="text-secondary/80 xl:text-xxs xs:text-xxs px-4 mt-2">
-                                Create dynamic and responsive user interfaces with cutting-edge
+                                Create dynamic and responsive user interfaces with cutting - edge
                                 frontend technologies to provide an exceptional user experience.
                             </p>
                             <div className="flex-wrap mt-4 flex items-center justify-center px-8 gap-1 ">
