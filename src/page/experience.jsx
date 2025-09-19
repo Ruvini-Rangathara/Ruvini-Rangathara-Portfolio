@@ -11,7 +11,7 @@ const experiences = [
     {
         id: 1,
         title: "Associate Software Engineer",
-        company: "Kingteza Software Solutions",
+        company: "Kingteza Software Solutions - (Hybrid)",
         duration: "Nov 2024 - Present",
         description:
             "Currently working as an Associate Software Engineer at Kingteza Software Solutions, focusing on building scalable and efficient full-stack applications to solve complex technical challenges.",
@@ -19,7 +19,7 @@ const experiences = [
     {
         id: 2,
         title: "Trainee Associate Software Engineer",
-        company: "Kingteza Software Solutions",
+        company: "BIZ Software Solutions",
         duration: "Apr 2024 - Oct 2024",
         description:
             "Successfully contributed to developing high-quality software solutions during a seven-month internship, gaining hands-on experience in agile development processes and problem-solving skills.",
@@ -95,7 +95,7 @@ const Modal = ({ isOpen, onClose, experience }) => {
 const Experience = () => {
     useEffect(() => {
         AOS.init({
-            duration: 3000,
+            duration: 2000,
             once: false,
             mirror: false,
         });

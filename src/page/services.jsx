@@ -93,7 +93,7 @@ const Services = () => {
                                 <div className={'service-name'} >NodeJs</div>
                                 <div className={'service-name'} >Spring</div>
                                 <div className={'service-name'} >SpringBoot</div>
-                                <div className={'service-name'} >Python</div>
+                                <div className={'service-name'} >PrismaJS</div>
                                 <div className={'service-name'} >NestJs</div>
                                 <div className={'service-name'} >MongoDB</div>
                                 <div className={'service-name'} >MySQL</div>

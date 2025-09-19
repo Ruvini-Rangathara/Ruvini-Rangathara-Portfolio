@@ -10,6 +10,7 @@ import Footer from "./component/footer";
 import About from "./page/about";
 import Preloader from "./component/preloader";
 import Experience from "./page/experience.jsx";
+import Achievements from './page/achievements.jsx';
 
 const App = () => {
     const [loading, setLoading] = useState(true);
@@ -53,6 +54,7 @@ const Body = () => {
         <Home/>
         <About/>
         <Experience/>
+        <Achievements/>
         <Services/>
         <Project/>
         <Testimonial/>

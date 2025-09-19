@@ -78,7 +78,7 @@ const Home = () => {
                         className="text-center">
                         <p className="text-[12px] text-secondary text-center px-auto xs:px-4 ">
                             I'm a Software Engineer from Sri Lanka, specializing in Web Development, <br/> Full Stack
-                            Development, and UX/UI designing.
+                            Development.
                         </p>
 
                         <div className="flex justify-center items-center">
