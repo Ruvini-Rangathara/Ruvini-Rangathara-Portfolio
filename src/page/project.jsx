@@ -22,51 +22,62 @@ import project42 from '/assets/ui/4/2.png';
 import project43 from '/assets/ui/4/3.png';
 import project51 from '/assets/ui/5/1.jpeg';
 import project61 from '/assets/ui/6/1.jpeg';
+import project71 from '/assets/ui/7/1.png';
+import project72 from '/assets/ui/7/2.png';
 
-// Sample data
 const projectData = [{
     image: project11,
     title: 'Vidathya Higher Education Management System',
     description: 'Vidathya Higher Tuition Class Management System is a standalone JavaFX application designed for streamlined class management, offering efficiency and ease of use.',
     images: [project11, project12, project13],
     githubLink: 'https://github.com/Ruvini-Rangathara/Tution-Class-Management-System-With-Layered.git',
-    liveLink: 'https://example.com/project1',
-}, {
-    image: project21,
-    title: 'Dream Home Real Estate (Marketplace) Website',
-    description: 'This project is a full-featured real estate marketplace application built using the MERN (MongoDB, Express.js, React, and Node.js) stack. The application allows users to create, manage, and search property listings with a modern and intuitive user interface.',
-    images: [project21, project22, project23],
-    githubLink: 'https://github.com/Ruvini-Rangathara/MERN-Real-Estate-App.git',
-    liveLink: 'https://dream-home-hgdz.onrender.com',
-}, {
+    liveLink: 'https://www.linkedin.com/posts/ruvini-rangathara-747756229_educationmanagement-javaproject-tuitionmanagementsystem-activity-7093253332105904128-ac3y?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk95acB6EycG4HjHpf0I7ypNRSISU3OOew',
+},
+// {
+//     image: project21,
+//     title: 'Dream Home Real Estate (Marketplace) Website',
+//     description: 'This project is a full-featured real estate marketplace application built using the MERN (MongoDB, Express.js, React, and Node.js) stack. The application allows users to create, manage, and search property listings with a modern and intuitive user interface.',
+//     images: [project21, project22, project23],
+//     githubLink: 'https://github.com/Ruvini-Rangathara/MERN-Real-Estate-App.git',
+//     liveLink: 'https://dream-home-hgdz.onrender.com',
+// }, 
+{
     image: project31,
     title: 'Burger Delight - Food Ordering Application',
     description: 'A comprehensive solution for managing burger shop orders, implemented using Spring Boot for backend services, and HTML, CSS, and JavaScript for a responsive, user-friendly frontend.',
     images: [project31, project32, project33],
     githubLink: 'https://github.com/Ruvini-Rangathara/Burger-Delight-Web-Frontend.git',
-    liveLink: 'https://example.com/project1',
+    liveLink: 'https://www.linkedin.com/posts/ruvini-rangathara-747756229_springboot-smtp-burger-activity-7156358143428493312-3V1q?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk95acB6EycG4HjHpf0I7ypNRSISU3OOew',
 }, {
     image: project41,
     title: 'Vidathya Higher Education Online Exam System',
     description: 'A comprehensive platform implemented using React, designed for managing exams and users. Students can register, take exams online, and view their marks. Users can update their details, view institute teachers, and access various statistics through an interactive dashboard.',
     images: [project41, project42, project43],
     githubLink: 'https://github.com/Ruvini-Rangathara/Vidathya-Web-Exam-Frontend.git',
-    liveLink: 'https://example.com/project1',
+    liveLink: 'https://www.linkedin.com/posts/ruvini-rangathara-747756229_springboot-nodejs-expressjs-activity-7166149802169253891-UYWE?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk95acB6EycG4HjHpf0I7ypNRSISU3OOew',
 }, {
     image: project51,
     title: 'Furry Care - Pet Care Web Application',
     description: 'A full-featured platform implemented using the MERN stack, providing pet care services and user profiles for a seamless and interactive experience for pet owners.',
     images: [project51],
     githubLink: 'https://github.com/Ruvini-Rangathara/Furry-Care-Web-Frontend.git',
-    liveLink: 'https://example.com/project1',
+    liveLink: 'https://www.linkedin.com/posts/ruvini-rangathara-747756229_mernstack-petcare-webdevelopment-activity-7156980719620108288-wszo?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk95acB6EycG4HjHpf0I7ypNRSISU3OOew',
 }, {
     image: project61,
     title: 'Travel Package Management System',
     description: 'A robust solution implemented using microservices and Spring Boot, designed to efficiently manage travel packages, bookings, and customer details, ensuring a seamless travel planning experience.',
     images: [project61],
     githubLink: 'https://github.com/Ruvini-Rangathara/Spring-Boot-Course-Work-FrontEnd.git',
-    liveLink: 'https://example.com/project1',
-},];
+    liveLink: 'https://www.linkedin.com/posts/ruvini-rangathara-747756229_im-happy-to-share-this-next-travel-travel-activity-7148730538084773889-imVg?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk95acB6EycG4HjHpf0I7ypNRSISU3OOew',
+}, {
+    image: project71,
+    title: 'Calorie Prediction API & Web App (Kaggle S5E5)',
+    description: 'A Flask-based RESTful API powered by CatBoost ML model for calorie burn predictions, with a React + Material-UI frontend for real-time results. Includes input validation, error handling, and responsive UI/UX.',
+    images: [project71, project72],
+    githubLink: 'https://github.com/Ruvini-Rangathara/Calorie-Predictor-Frontend.git',
+    liveLink: 'https://www.linkedin.com/posts/ruvini-rangathara-747756229_machinelearning-flask-react-activity-7371838693956845568-LpSe?utm_source=share&utm_medium=member_desktop&rcm=ACoAADk95acB6EycG4HjHpf0I7ypNRSISU3OOew',
+},
+];
 
 
 // ProjectCard Component
@@ -253,7 +264,7 @@ const Project = () => {
                 data-aos="fade-up"
                 className="text-center">
                 <h2 className="text-accent text-3xl mb-2">Projects</h2>
-                <p className="text-secondary/50 text-xl xs:text-xs xs:px-8 mb-4">
+                <p className="text-secondary/50 text-xl xs:text-xs xs:px-8">
                     Explore my completed software development projects.
                 </p>
             </div>
