@@ -95,7 +95,7 @@ const Modal = ({ isOpen, onClose, experience }) => {
 const Experience = () => {
     useEffect(() => {
         AOS.init({
-            duration: 2000,
+            duration: 1000,
             once: false,
             mirror: false,
         });
