@@ -91,7 +91,7 @@ const Services = () => {
                             <div className="mt-4 flex flex-wrap items-center justify-center px-8 gap-1">
                                 <div className={'service-name'} >Java</div>
                                 <div className={'service-name'} >NodeJs</div>
-                                <div className={'service-name'} >Spring</div>
+                                {/* <div className={'service-name'} >Spring</div> */}
                                 <div className={'service-name'} >SpringBoot</div>
                                 <div className={'service-name'} >PrismaJS</div>
                                 <div className={'service-name'} >NestJs</div>
@@ -140,11 +140,11 @@ const Services = () => {
                                 <div className={'service-name'}>Javascript</div>
                                 <div className={'service-name'}>Typescript</div>
                                 <div className={'service-name'}>React</div>
-                                <div className={'service-name'}>React Native</div>
+                                {/* <div className={'service-name'}>React Native</div> */}
                                 <div className={'service-name'}>Redux</div>
                                 <div className={'service-name'}>Bootstrap</div>
-                                <div className={'service-name'}>MUI</div>
-                                <div className={'service-name'}>DesyUI</div>
+                                {/* <div className={'service-name'}>MUI</div>
+                                <div className={'service-name'}>DesyUI</div> */}
                                 {/*<img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5 Icon" width="16"*/}
                                 {/*     height="16"/>*/}
                                 {/*<img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3 Icon" width="16"*/}
@@ -177,17 +177,17 @@ const Services = () => {
                             <h3 className="text-xs">Other Technologies</h3>
                             <p className="text-secondary/80 xl:text-xxs xs:text-xxs px-4 mt-2">
                                 Leverage a wide range of tools & platforms to deliver comprehensive
-                                solutions, including version control, cloud services & continuous integration.
+                                solutions, including version control & continuous integration.
                             </p>
                             <div className="flex-wrap mt-4 flex items-center justify-center px-8 gap-1">
                                 <div className={'service-name'}>Git</div>
                                 <div className={'service-name'}>GitHub</div>
-                                <div className={'service-name'}>Docker</div>
-                                <div className={'service-name'}>AWS</div>
+                                {/* <div className={'service-name'}>Docker</div> */}
+                                {/* <div className={'service-name'}>AWS</div> */}
                                 <div className={'service-name'}>Google Cloud Platform</div>
                                 <div className={'service-name'}>Linux</div>
                                 <div className={'service-name'}>Windows</div>
-                                <div className={'service-name'}>Firebase</div>
+                                {/* <div className={'service-name'}>Firebase</div> */}
                                 {/*<img src="https://cdn.simpleicons.org/git/F05032" alt="Git Icon" width="16"*/}
                                 {/*     height="16"/>*/}
                                 {/*<img src="https://cdn.simpleicons.org/github/181717" alt="GitHub Icon" width="16"*/}

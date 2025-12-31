@@ -1,54 +1,65 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination, Autoplay } from "swiper/modules";
+import { FreeMode, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
 import { FaTrophy, FaCertificate } from "react-icons/fa";
 
 const achievements = [
   {
-    icon: <FaCertificate className="text-accent text-2xl" />,
+    icon: <FaCertificate className="text-accent text-xl" />,
     title: "Batch Top – GDSE 61",
-    org: "Institute of Software Engineering (IJSE)",
+    org: "Institute of Software Engineering",
     year: "2024",
     tags: ["Academic Excellence"],
-    desc: "Achieved batch top rank in Graduate Diploma in Software Engineering (GDSE 61).",
+    desc: "Achieved batch top rank in Graduate Diploma in Software Engineering.",
   },
   {
-    icon: <FaTrophy className="text-accent text-2xl" />,
-    title: "2nd Place – PSR Vlogs Hackathon",
+    icon: <FaTrophy className="text-accent text-xl" />,
+    title: "2nd Place – Hackathon",
     org: "PSR Vlogs",
     year: "2024",
     tags: ["Hackathon", "Microservices"],
-    desc: "Secured 2nd place by developing a distributed Hotel Booking Microservices System.",
+    desc: "Secured 2nd place by developing a distributed Hotel Booking System.",
+  },
+  {
+    icon: <FaTrophy className="text-accent text-xl" />,
+    title: "1st Place – Debate Competition",
+    org: "British Way English Academy",
+    year: "2025",
+    tags: ["Public Speaking", "Debate"],
+    desc: "Won first place at the debate competition conducted by British Way English Academy.",
   },
 ];
 
 const AchievementCard = ({ item }) => (
-  <div className="w-full max-w-[360px] md:max-w-[420px] px-4 bg-purple-50 border border-gray p-4 rounded-2xl flex flex-col">
+  <div className="bg-purple-50 border shadow-md p-6 rounded-lg flex flex-col h-full">
     <div className="flex items-center gap-3 mb-2">
-      <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-white shadow-sm">
+      <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-sm">
         {item.icon}
       </div>
       <div>
-        <h3 className="text-xs font-semibold">{item.title}</h3>
-        <p className="text-secondary/60 text-xxs">
+        <h3 className="text-sm font-semibold leading-tight">
+          {item.title}
+        </h3>
+        <p className="text-[11px] text-secondary/60">
           {item.org} • {item.year}
         </p>
       </div>
     </div>
 
-    <p className="text-secondary/80 xl:text-xxs xs:text-xxs mt-1">
+    <p className="text-[12px] text-secondary/80 mt-1 leading-relaxed text-justify">
       {item.desc}
     </p>
 
     <div className="mt-3 flex flex-wrap gap-1">
       {item.tags.map((t, i) => (
-        <span key={i} className="service-name">
+        <span
+          key={i}
+          className="px-2 py-[2px] text-[10px] rounded-md bg-white border text-secondary"
+        >
           {t}
         </span>
       ))}
@@ -58,77 +69,42 @@ const AchievementCard = ({ item }) => (
 
 const Achievements = () => {
   useEffect(() => {
-    AOS.init({ duration: 2000, once: false, mirror: false });
+    AOS.init({ duration: 1000, once: false });
   }, []);
 
-  const [startCounting, setStartCounting] = useState(false);
-  const { ref: statsRef, inView: statsInView } = useInView({
-    triggerOnce: false,
-    threshold: 0.15,
-  });
-
-  useEffect(() => {
-    setStartCounting(statsInView);
-  }, [statsInView]);
-
   return (
-    <section id="achievements_id" className="py-14 xl:py-14 xs:py-6">
+    <section
+      id="achievements_id"
+      className="xl:px-44 xs:px-10 xs:mt-10 mb-6"
+    >
       {/* Header */}
       <div data-aos="fade-up" className="text-center mb-6">
         <h2 className="text-accent text-3xl mb-2">Achievements</h2>
-        <p className="text-secondary/50 text-xl xs:text-xs xs:px-8">
+        <p className="text-secondary/50 text-xl xs:text-xs">
           Recognitions, certifications, and community contributions.
         </p>
       </div>
 
-      {/* Cards Carousel */}
-      <div className="container mx-auto px-4 xs:px-0 xl:px-8 flex justify-center">
-        <Swiper
-          data-aos="zoom-in"
-          spaceBetween={24}
-          slidesPerView={1}
-          // centeredSlides
-          pagination={{ clickable: true }}
-          // autoplay={{ delay: 3500, disableOnInteraction: false }}
-          modules={[FreeMode, Pagination, Autoplay]}
-          className="pb-14 max-w-6xl"
-          breakpoints={{
-            640: { slidesPerView: 1, spaceBetween: 20 },
-            768: { slidesPerView: 2, spaceBetween: 24 },
-            1024: { slidesPerView: 3, spaceBetween: 24 },
-          }}
-        >
-          {achievements.map((a, idx) => (
-            <SwiperSlide key={idx} className="!w-auto flex justify-center">
-              <AchievementCard item={a} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-
-      {/* Highlight Stats */}
-      {/* <div
-        ref={statsRef}
-        className="mt-2 xl:mt-0 flex gap-6 justify-center flex-wrap xl:w-[50vw] xs:w-[90vw] mx-auto"
+      {/* Swiper */}
+      <Swiper
+        data-aos="fade-up"
+        spaceBetween={20}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        modules={[FreeMode, Pagination]}
+        className="pb-10"
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
       >
-        <div className="flex justify-center items-center flex-col">
-          <div className="text-[22px] xl:text-3xl text-accent mb-1">
-            {startCounting && <CountUp start={0} end={12} duration={3} />} +
-          </div>
-          <div className="text-center px-1 text-secondary xl:text-xs text-xs xs:text-[12px] uppercase tracking-[1px] max-w-[140px]">
-            Certifications & Badges
-          </div>
-        </div>
-
-        <div className="flex justify-center items-center flex-col">
-          <div className="text-[22px] xl:text-3xl text-accent mb-1">
-            {startCounting && <CountUp start={0} end={4} duration={3} />} +
-          </div>
-          <div className="text-center px-1 text-secondary xl:text-xs text-xs xs:text-[12px] uppercase tracking-[1px] max-w-[140px]">
-            Hackathons & Awards
-          </div>
-        </div>
-      </div> */}
+        {achievements.map((item, idx) => (
+          <SwiperSlide key={idx} className="flex justify-center">
+            <AchievementCard item={item} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };
